@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/frontend', function () {
+Route::get('/', function () {
     return view('frontend.index');
 });

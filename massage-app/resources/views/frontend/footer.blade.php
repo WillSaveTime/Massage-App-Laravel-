@@ -20,7 +20,7 @@
               </a>
             </li>
             <li class="display-inline-block">
-              <a data-turbolinks="false" href="system.html">
+              <a data-turbolinks="false" href="{{ route('system') }}">
                 SYSTEM
               </a>
             </li>

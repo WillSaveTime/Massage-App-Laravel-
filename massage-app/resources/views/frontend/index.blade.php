@@ -5,7 +5,7 @@
     @yield('frontend.page.header')
     <!-- ======== /header ======== -->
     <!-- ======== nav ======== -->
-    @yield('frontend.nav')
+    @include('frontend.nav')
     <!-- ======== /nav ======== -->
     <!-- ======== mainView ======== -->
     <section class="mainView" id="scrollTopPoint">

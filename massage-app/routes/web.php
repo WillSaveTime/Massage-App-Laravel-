@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend.index');
 });
+
+Route::get('/system', function() {
+    return view('frontend.system');
+})->name('system');
+
+Route::prefix('frontend')->group(function(){
+    Route::get('/schedule', function(){ return view('frontend.schedule'); })->name('schedule');
+    Route::get('/reservation', function(){ return view('frontend.reservation'); })->name('reservation');
+});

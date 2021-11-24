@@ -7,37 +7,37 @@
         </a>
     </li>
     <li class="display-inline-block navItem riseFadeJs">
-        <a class="isCurrent" data-turbolinks="false" href="system.html">
+        <a class="isCurrent" data-turbolinks="false" href="{{ route('system') }}">
         SYSTEM<br>
         <small>システム</small>
         </a>
     </li>
     <li class="display-inline-block navItem riseFadeJs">
-        <a class="isCurrent" data-turbolinks="false" href="schedule.html">
+        <a class="isCurrent" data-turbolinks="false" href="{{ route('schedule') }}">
         SCHEDULE<br>
         <small>スケジュール</small>
         </a>
     </li>
     <li class="display-inline-block navItem riseFadeJs">
-        <a class="isCurrent" data-turbolinks="false" href="therapist.html">
+        <a class="isCurrent" data-turbolinks="false" href="{{ route('therapist) }}">
         THERAPIST<br>
         <small>セラピスト</small>
         </a>
     </li>
     <li class="display-inline-block navItem riseFadeJs">
-        <a class="isCurrent" data-turbolinks="false" href="reservation.html">
+        <a class="isCurrent" data-turbolinks="false" href="{{ route('reservation) }}">
         RESERVATION<br>
         <small>予約</small>
         </a>
     </li>
     <li class="display-inline-block navItem riseFadeJs">
-        <a class="isCurrent" data-turbolinks="false" href="access.html">
+        <a class="isCurrent" data-turbolinks="false" href="{{ route('access') }}">
         ACCESS<br>
         <small>アクセス</small>
         </a>
     </li>
     <li class="display-inline-block navItem riseFadeJs">
-        <a class="isCurrent" data-turbolinks="false" href="recruit.html">
+        <a class="isCurrent" data-turbolinks="false" href="{{ route('recruit') }}">
         RECRUIT<br>
         <small>求人</small>
         </a>
@@ -54,37 +54,37 @@
         </a>
     </li>
     <li class="display-block navItem riseFadeJs">
-        <a class="isCurrent" data-turbolinks="false" href="system.html">
+        <a class="isCurrent" data-turbolinks="false" href="{{ route('system') }}">
         SYSTEM<br>
         <small>システム</small>
         </a>
     </li>
     <li class="display-block navItem riseFadeJs">
-        <a class="isCurrent" data-turbolinks="false" href="schedule.html">
+        <a class="isCurrent" data-turbolinks="false" href="{{ route('schedule') }}">
         SCHEDULE<br>
         <small>スケジュール</small>
         </a>
     </li>
     <li class="display-block navItem riseFadeJs">
-        <a class="isCurrent" data-turbolinks="false" href="therapist.html">
+        <a class="isCurrent" data-turbolinks="false" href="{{ route('therapist) }}">
         THERAPIST<br>
         <small>セラピスト</small>
         </a>
     </li>
     <li class="display-block navItem riseFadeJs">
-        <a class="isCurrent" data-turbolinks="false" href="reservation.html">
+        <a class="isCurrent" data-turbolinks="false" href="{{ route('reservation) }}">
         RESERVATION<br>
         <small>予約</small>
         </a>
     </li>
     <li class="display-block navItem riseFadeJs">
-        <a class="isCurrent" data-turbolinks="false" href="access.html">
+        <a class="isCurrent" data-turbolinks="false" href="{{ route('access') }}">
         ACCESS<br>
         <small>アクセス</small>
         </a>
     </li>
     <li class="display-block navItem riseFadeJs">
-        <a class="isCurrent" data-turbolinks="false" href="recruit.html">
+        <a class="isCurrent" data-turbolinks="false" href="{{ route('recruit') }}">
         RECRUIT<br>
         <small>求人</small>
         </a>

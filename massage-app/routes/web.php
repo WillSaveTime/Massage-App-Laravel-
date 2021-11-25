@@ -13,15 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
-
-Route::get('/system', function() {
-    return view('frontend.system');
-})->name('system');
 
 Route::prefix('frontend')->group(function(){
+    Route::get('/', function(){ return view('frontend.index'); })->name('index');
+    Route::get('/system', function() { return view('frontend.system'); })->name('system');
     Route::get('/schedule', function(){ return view('frontend.schedule'); })->name('schedule');
     Route::get('/reservation', function(){ return view('frontend.reservation'); })->name('reservation');
+    Route::get('/therapist', function(){ return view('frontend.therapist'); })->name('therapist');
+    Route::get('/access', function(){ return view('frontend.access'); })->name('access');
+    Route::get('/recruit', function(){ return view('frontend.recruit'); })->name('recruit');
 });

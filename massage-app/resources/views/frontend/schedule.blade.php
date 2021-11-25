@@ -1,198 +1,16 @@
-@include('frontend.header')
-<!-- ======== main ======== -->
-  <main class="priority">
-    <!-- ======== header ======== -->
-    @yield('frontend.page.header')
-    <!-- ======== /header ======== -->
-    <!-- ======== nav ======== -->
-    @include('frontend.nav')
-    <!-- ======== /nav ======== -->
-     <!-- ======== main ======== -->
+@include('frontend.sections.header')
+  <!-- ======== main ======== -->
   <main class="priority noHome">
     <!-- ======== header ======== -->
-    <header class="priority clearfix">
-      <div class="headerCont cont clearfix">
-        <div class="headerLeft">
-          <div class="headerLogo">
-            <a data-turbolinks="false" class="logoLink" href="index.html">
-              <img class="logo logoWhite"
-                src="assets/customer/logo-4235d13b1fef2284d93a5e03151f13ea181a9ded27ba70d02f063d9107b68974.png" />
-              <img class="logo logoGold"
-                src="assets/customer/logoGold-d88459723f7d2efc28d130310bd7c5e335439368db37c8e2ea16aa31e700c1a9.png" />
-              <h1 class="logoDesc">池袋メンズエステ バズーカ</h1>
-            </a>
-          </div>
-        </div>
-        <div class="headerRight">
-          <div id="navBtnJs" class="navBar displayNoneMore1023">
-            <span data-open=""></span>
-            <div>
-              <i></i>
-              <i></i>
-              <i></i>
-            </div>
-          </div>
-        </div>
-        <div class="headerCenter">
-          <div class="navInfo">
-            <a onclick="gtag(&quot;event&quot;, &quot;tel&quot;, { &quot;event_category&quot;: &quot;cv&quot;, &quot;event_label&quot;: &quot;telclick&quot;, &quot;value&quot;: 1 });"
-              alt="09017004288" href="tel:09017004288">
-              <p class="timeAndTel">
-                Tel：090-1700-4288</p>
-            </a>
-            <p class="timeAndTel">
-              Open：10:00~05:00
-              <br class="displayNoneLess1023">
-              <span>
-                (受付時間)09:30~05:00
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </header>
+    @yield('frontend.sections.page.header')
     <!-- ======== /header ======== -->
     <!-- ======== nav ======== -->
-    <nav class="navPc displayNoneLess1023">
-      <ul class="navItems clearfix" id="navItemsPc">
-        <li class="display-inline-block navItem riseFadeJs">
-          <a class="isCurrent" data-turbolinks="false" href="index.html">
-            HOME<br>
-            <small>ホーム</small>
-          </a>
-        </li>
-        <li class="display-inline-block navItem riseFadeJs">
-          <a class="isCurrent" data-turbolinks="false" href="system.html">
-            SYSTEM<br>
-            <small>システム</small>
-          </a>
-        </li>
-        <li class="display-inline-block navItem riseFadeJs">
-          <a class="isCurrent" data-turbolinks="false" href="schedule.html">
-            SCHEDULE<br>
-            <small>スケジュール</small>
-          </a>
-        </li>
-        <li class="display-inline-block navItem riseFadeJs">
-          <a class="isCurrent" data-turbolinks="false" href="therapist.html">
-            THERAPIST<br>
-            <small>セラピスト</small>
-          </a>
-        </li>
-        <li class="display-inline-block navItem riseFadeJs">
-          <a class="isCurrent" data-turbolinks="false" href="reservation.html">
-            RESERVATION<br>
-            <small>予約</small>
-          </a>
-        </li>
-        <li class="display-inline-block navItem riseFadeJs">
-          <a class="isCurrent" data-turbolinks="false" href="access.html">
-            ACCESS<br>
-            <small>アクセス</small>
-          </a>
-        </li>
-        <li class="display-inline-block navItem riseFadeJs">
-          <a class="isCurrent" data-turbolinks="false" href="recruit.html">
-            RECRUIT<br>
-            <small>求人</small>
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <nav id="navJs" class="navSpTb displayNoneMore1023">
-      <ul class="navItems">
-        <li class="display-block navItem riseFadeJs">
-          <a class="isCurrent" data-turbolinks="false" href="index.html">
-            HOME<br>
-            <small>ホーム</small>
-          </a>
-        </li>
-        <li class="display-block navItem riseFadeJs">
-          <a class="isCurrent" data-turbolinks="false" href="system.html">
-            SYSTEM<br>
-            <small>システム</small>
-          </a>
-        </li>
-        <li class="display-block navItem riseFadeJs">
-          <a class="isCurrent" data-turbolinks="false" href="schedule.html">
-            SCHEDULE<br>
-            <small>スケジュール</small>
-          </a>
-        </li>
-        <li class="display-block navItem riseFadeJs">
-          <a class="isCurrent" data-turbolinks="false" href="therapist.html">
-            THERAPIST<br>
-            <small>セラピスト</small>
-          </a>
-        </li>
-        <li class="display-block navItem riseFadeJs">
-          <a class="isCurrent" data-turbolinks="false" href="reservation.html">
-            RESERVATION<br>
-            <small>予約</small>
-          </a>
-        </li>
-        <li class="display-block navItem riseFadeJs">
-          <a class="isCurrent" data-turbolinks="false" href="access.html">
-            ACCESS<br>
-            <small>アクセス</small>
-          </a>
-        </li>
-        <li class="display-block navItem riseFadeJs">
-          <a class="isCurrent" data-turbolinks="false" href="recruit.html">
-            RECRUIT<br>
-            <small>求人</small>
-          </a>
-        </li>
-      </ul>
-
-      <div class="navInfo riseFadeJs">
-        <p>営業情報</p>
-        <a onclick="gtag(&quot;event&quot;, &quot;tel&quot;, { &quot;event_category&quot;: &quot;cv&quot;, &quot;event_label&quot;: &quot;telclick&quot;, &quot;value&quot;: 1 });"
-          alt="09017004288" href="tel:09017004288">
-          <p class="timeAndTel">
-            <span class="icon"><img class=""
-                src="assets/customer/clockGold-296f87d5e775652c5fd0b35634f6f2d5fff8443b9a789f437d5774b3495231fc.png" /></span>
-            10:00~05:00
-          </p>
-          <p class="timeAndTel">
-            <span class="icon"><img class=""
-                src="assets/customer/telGold-02c240dcfbb8bdc5d440db77894156286102af635f66ed3d92845591310cc499.png" /></span>
-            09017004288
-          </p>
-        </a>
-      </div>
-    </nav>
+    @include('frontend.sections.nav')
     <!-- ======== /nav ======== -->
-
     <!-- ======== mainView ======== -->
-    <section class="mainView" id="scrollTopPoint">
-      <div class="mainViewCont ts">
-        <div class="mainViewInner">
-          <div class="sectionTitle sectionTitleLine textCenter pdTop80 m-pdTop50 s-pdTop80">
-            <h2 class="sectionTitleTop">SCHEDULE</h2>
-            <p>スケジュール</p>
-          </div>
-          <div class="display-block sectionDesc textCenter pdBottom50 m-pdBottom50 s-pdBottom20">
-            <p>
-            <p style="text-align: center;">本日から7日間の出勤予定になります。</p>
-
-            <p style="text-align: center;">気になるセラピスト、お気に入りのセラピストの出勤をご確認ください。</p>
-
-            <p style="text-align: center;">万が一、ご希望に添える日程やお時間がございましたら、お気軽にご相談くださいませ。</p>
-
-            <p style="text-align: center;">WEBでのお問い合わせも致しておりますので、ご利用ください。</p>
-
-            <p style="text-align: center;">&nbsp;</p>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    @include('frontend.sections.mainview')
     <!-- ======== /mainView ======== -->
-
-
-
+    
     <!-- ======== scheduleView ======== -->
     <section class="scheduleView clearfix pdTop140 pdBottom140 m-pdTop50 m-pdBottom50">
       <div class="twoColorBackGround"></div>
@@ -390,4 +208,4 @@
     <!-- ======== /scheduleView ======== -->
 
   </main> <!-- ======== /main ======== -->
-  @include('frontend.footer')
+  @include('frontend.sections.footer')

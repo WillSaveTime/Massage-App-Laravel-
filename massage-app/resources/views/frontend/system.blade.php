@@ -1,32 +1,15 @@
-@include('frontend.header')
+@include('frontend.sections.header')
 <!-- ======== main ======== -->
-  <main class="priority">
+  <main class="priority noHome">
     <!-- ======== header ======== -->
-    @yield('frontend.page.header')
+    @yield('frontend.sections.page.header')
     <!-- ======== /header ======== -->
     <!-- ======== nav ======== -->
-    @include('frontend.nav')
+    @include('frontend.sections.nav')
     <!-- ======== /nav ======== -->
     <!-- ======== mainView ======== -->
-    <section class="mainView" id="scrollTopPoint">
-  <div class="mainViewCont sr">
-    <div class="mainViewInner">
-      <div class="sectionTitle sectionTitleLine textCenter pdTop80 m-pdTop50 s-pdTop80">
-        <h2 class="sectionTitleTop">SYSTEM</h2>
-        <p>システム</p>
-      </div>
-      <div class="display-block sectionDesc textCenter pdBottom50 m-pdBottom50 s-pdBottom20">
-    <p><p style="text-align: center;">【ハイクオリティーのお時間をリーズナブルな価格で。】</p>
-
-<p style="text-align: center;">癒しと非日常をしっかりとお届させて頂きます。</p>
-
-<p style="text-align: center;">ぜひ、至福なひととき・贅沢なお時間をセラピストとお創りください。</p>
-</p>
-</div>
-    </div>
-  </div>
-</section>
-<!-- ======== /mainView ======== -->
+    @include('frontend.sections.mainview')
+    <!-- ======== /mainView ======== -->
 
 <!-- ======== courseView ======== -->
 <section class="display-block courseView clearfix pdTop140 pdBottom50 m-pdTop50 m-pdBottom30">
@@ -312,6 +295,4 @@
   </div>
 </section><!-- ======== /systemPolicyView ======== -->
 
-
-</main>    <!-- ======== /main ======== -->
-@include('frontend.footer')
+@include('frontend.sections.footer')

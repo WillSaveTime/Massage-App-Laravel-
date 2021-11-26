@@ -88,7 +88,7 @@
       <nav class="navPc displayNoneLess1023">
         <ul class="navItems clearfix" id="navItemsPc">
           <li class="display-inline-block navItem riseFadeJs">
-            <a class="isCurrent" href="/index.html">
+            <a class="isCurrent" href="index.html">
               HOME<br />
               <small>ホーム</small>
             </a>
@@ -199,139 +199,143 @@
         <div class="mainViewCont">
           <div class="mainViewInner">
             <div class="sectionTitle sectionTitleLine textCenter pdTop80 m-pdTop50 s-pdTop80">
-              <h2 class="sectionTitleTop">Link</h2>
-              <p>外部リンク</p>
+              <h2 class="sectionTitleTop">NEWS</h2>
+              <p>ニュース一覧</p>
             </div>
+            <div class="display-none sectionDesc textCenter pdBottom50 m-pdBottom50 s-pdBottom20"></div>
           </div>
         </div>
       </section>
       <!-- ======== /mainView ======== -->
 
-      <!-- ======== link_view ======== -->
-      <section class="link_view pdTop100 pdBottom40 m-pdTop50 m-pdBottom0" id="scrollTopPoint">
-        <div class="link_view_cont cont">
+      <!-- ======== news_view ======== -->
+      <section class="display-block news_view pdTop10 pdBottom10 m-pdTop10">
+        <div class="news_view_cont cont">
           <div class="sectionTitle sectionTitleLine textCenter">
-            <h3 class="sectionTitleTop">Link Banner</h3>
+            <h2 class="sectionTitleTop">News</h2>
           </div>
           <div class="sectionDesc textCenter">
-            <p>リンクバナー</p>
+            <p>ニュース一覧</p>
           </div>
-          <div class="link_container">
-            <div class="link_wrapper">
-              <h3>サイト名</h3>
-              <p>サンプルエステリンパ</p>
+          <div class="news_list clearfix">
+            <!-- news-list-wrapper -->
+            <div class="show_more_content clearfix">
+              <div class="item">
+                <a href="news/3194.html">
+                  <label>NEWS</label>
+                  <p class="item_time">2021/11/14(日) 7:00</p>
+                  <h3 class="itemTitle">♡11月14日のご案内状況♡</h3>
+                </a>
+              </div>
+              <div class="item">
+                <a href="news/3192.html">
+                  <label>NEWS</label>
+                  <p class="item_time">2021/11/12(金) 7:00</p>
+                  <h3 class="itemTitle">♡11月12日のご案内状況♡</h3>
+                </a>
+              </div>
+              <div class="item">
+                <a href="news/3191.html">
+                  <label>NEWS</label>
+                  <p class="item_time">2021/11/11(木) 7:00</p>
+                  <h3 class="itemTitle">♡11月11日のご案内状況♡</h3>
+                </a>
+              </div>
+              <div class="item">
+                <a href="news/3190.html">
+                  <label>NEWS</label>
+                  <p class="item_time">2021/11/10(水) 7:00</p>
+                  <h3 class="itemTitle">♡11月10日のご案内状況♡</h3>
+                </a>
+              </div>
+              <div class="item">
+                <a href="news/3189.html">
+                  <label>NEWS</label>
+                  <p class="item_time">2021/11/9(火) 7:00</p>
+                  <h3 class="itemTitle">♡11月9日のご案内状況♡</h3>
+                </a>
+              </div>
+              <div class="item">
+                <a href="news/3188.html">
+                  <label>NEWS</label>
+                  <p class="item_time">2021/11/8(月) 7:00</p>
+                  <h3 class="itemTitle">♡11月8日のご案内状況♡</h3>
+                </a>
+              </div>
+              <div class="item">
+                <a href="news/3187.html">
+                  <label>NEWS</label>
+                  <p class="item_time">2021/11/7(日) 9:00</p>
+                  <h3 class="itemTitle">♡11月7日のご案内状況♡</h3>
+                </a>
+              </div>
+              <div class="item">
+                <a href="news/3186.html">
+                  <label>NEWS</label>
+                  <p class="item_time">2021/11/6(土) 7:00</p>
+                  <h3 class="itemTitle">♡11月6日のご案内状況♡</h3>
+                </a>
+              </div>
+              <div class="item">
+                <a href="news/3185.html">
+                  <label>NEWS</label>
+                  <p class="item_time">2021/11/5(金) 7:00</p>
+                  <h3 class="itemTitle">♡11月5日のご案内状況♡</h3>
+                </a>
+              </div>
+              <div class="item">
+                <a href="news/3184.html">
+                  <label>NEWS</label>
+                  <p class="item_time">2021/11/4(木) 7:00</p>
+                  <h3 class="itemTitle">♡11月4日のご案内状況♡</h3>
+                </a>
+              </div>
             </div>
-
-            <div class="link_wrapper">
-              <h3>リンク先</h3>
-              <p>
-                <a href="index.html">https://www.rimpa.com/</a>
-              </p>
-            </div>
-
-            <div class="link_wrapper">
-              <h3>alt属性</h3>
-              <p>サンプルエステ　リンパ</p>
-            </div>
-
-            <div class="link_wrapper">
-              <h3>各種バナー</h3>
-              <ul>
+            <!-- /news-list-wrapper -->
+          </div>
+          <div class="paginationContent">
+            <nav class="pagination text-center" role="navigation" aria-label="pager">
+              <ul class="page-numbers">
+                <li></li>
+                <li></li>
+                <li><span class="page current"> 1 </span></li>
                 <li>
-                  <img src="assets/customer/banner_sm.jpg" />
-                  <p>88*31(px)</p>
+                  <span class="page">
+                    <a rel="next" class="page-number" href="news_list%EF%B9%96page=2.html">2</a>
+                  </span>
                 </li>
                 <li>
-                  <img src="assets/customer/banner_sm.jpg" />
-                  <p>160*45(px)</p>
+                  <span class="page">
+                    <a class="page-number" href="news_list%EF%B9%96page=3.html">3</a>
+                  </span>
                 </li>
                 <li>
-                  <img src="assets/customer/banner_sm.jpg" />
-                  <p>200*40(px)</p>
+                  <span class="page">
+                    <a class="page-number" href="news_list%EF%B9%96page=4.html">4</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="page">
+                    <a class="page-number" href="news_list%EF%B9%96page=5.html">5</a>
+                  </span>
+                </li>
+                <li><span class="page gap">...</span></li>
+                <li>
+                  <span class="next">
+                    <a rel="next" href="news_list%EF%B9%96page=2.html">＞</a>
+                  </span>
+                </li>
+                <li>
+                  <span class="last">
+                    <a href="news_list%EF%B9%96page=92.html">＞|</a>
+                  </span>
                 </li>
               </ul>
-            </div>
+            </nav>
           </div>
         </div>
       </section>
-      <!-- ======== /link_view ======== -->
-      <!-- ======== link_view ======== -->
-      <section class="link_view pdTop50 pdBottom140 m-pdTop20 m-pdBottom50">
-        <div class="link_view_cont cont">
-          <div class="sectionTitle sectionTitleLine textCenter">
-            <h3 class="sectionTitleTop">Link</h3>
-          </div>
-          <div class="sectionDesc textCenter">
-            <p>外部リンク一覧</p>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- ======== /link_view ======== -->
+      <!-- ======== /news_view ======== -->
     </main>
     <!-- ======== /main ======== -->
     <!-- ======== footer ======== -->

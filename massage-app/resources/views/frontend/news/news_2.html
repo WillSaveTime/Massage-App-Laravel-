@@ -10,7 +10,7 @@
     <meta property="og:title" content="ここにOGTタイトルが入ります" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.ここにOGTURLが入ります.com/" />
-    <meta property="og:image" content="assets/customer/logo.png" />
+    <meta property="og:image" content="../assets/customer/logo.png" />
     <meta property="og:site_name" content="OGT用サイト名が入ります" />
     <meta property="og:description" content="ここにOGTサイト説明が入ります" />
     <meta property="og:locale" content="ja_JP" />
@@ -19,8 +19,8 @@
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" media="all" href="assets/lux_esthe.css" data-turbolinks-track="reload" />
-    <script src="assets/lux_esthe.js" data-turbolinks-track="reload"></script>
+    <link rel="stylesheet" media="all" href="../assets/lux_esthe.css" data-turbolinks-track="reload" />
+    <script src="../assets/lux_esthe.js" data-turbolinks-track="reload"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <!-- css -->
 
@@ -53,8 +53,8 @@
           <div class="header_left">
             <div class="header_logo">
               <a class="logoLink" href="index.html">
-                <img class="logo logo_01" src="assets/customer/logo.png" />
-                <img class="logo logo_02" src="assets/customer/logo_secondary.png" />
+                <img class="logo logo_01" src="../assets/customer/logo.png" />
+                <img class="logo logo_02" src="../assets/customer/logo_secondary.png" />
                 <h1 class="logo_desc" style="color: #ffffff; font-family: 'Noto Serif JP', sans-serif; padding: 5px 0">サンプルエステサイト</h1>
               </a>
             </div>
@@ -182,11 +182,11 @@
           <p>営業情報</p>
           <a onclick='gtag("event", "tel", { "event_category": "cv", "event_label": "telclick", "value": 1 });' alt="09000000000" href="tel:09000000000">
             <p class="timeAndTel">
-              <span class="icon"><img class="" src="assets/customer/clock_gold.png" /></span>
+              <span class="icon"><img class="" src="../assets/customer/clock_gold.png" /></span>
               10:00~05:00
             </p>
             <p class="timeAndTel">
-              <span class="icon"><img class="" src="assets/customer/tel_gold.png" /></span>
+              <span class="icon"><img class="" src="../assets/customer/tel_gold.png" /></span>
               09000000000
             </p>
           </a>
@@ -199,139 +199,105 @@
         <div class="mainViewCont">
           <div class="mainViewInner">
             <div class="sectionTitle sectionTitleLine textCenter pdTop80 m-pdTop50 s-pdTop80">
-              <h2 class="sectionTitleTop">Link</h2>
-              <p>外部リンク</p>
+              <h2 class="sectionTitleTop">NEWS</h2>
+              <p>ニュース</p>
             </div>
+            <div class="display-none sectionDesc textCenter pdBottom50 m-pdBottom50 s-pdBottom20"></div>
           </div>
         </div>
       </section>
       <!-- ======== /mainView ======== -->
 
-      <!-- ======== link_view ======== -->
-      <section class="link_view pdTop100 pdBottom40 m-pdTop50 m-pdBottom0" id="scrollTopPoint">
-        <div class="link_view_cont cont">
+      <!-- ======== news_views ======== -->
+      <section class="news_views pdTop140 pdBottom140 m-pdTop50 m-pdBottom50" id="scrollTopPoint">
+        <div class="news_views_cont cont">
           <div class="sectionTitle sectionTitleLine textCenter">
-            <h3 class="sectionTitleTop">Link Banner</h3>
+            <h2 class="sectionTitleTop">News</h2>
           </div>
           <div class="sectionDesc textCenter">
-            <p>リンクバナー</p>
+            <p>ニュース</p>
           </div>
-          <div class="link_container">
-            <div class="link_wrapper">
-              <h3>サイト名</h3>
-              <p>サンプルエステリンパ</p>
+          <div class="item">
+            <div class="itemHead">
+              <div class="title">
+                <h3>当店のイベント情報のお知らせ</h3>
+              </div>
+              <div class="updatedDay">
+                <p>2021/11/xx(日) 10:00 up</p>
+              </div>
             </div>
+            <div class="itemInner">
+              <p style="text-align: center">当店のお得な割引情報がございますので、下記URLにてご確認ください！</p>
 
-            <div class="link_wrapper">
-              <h3>リンク先</h3>
-              <p>
-                <a href="index.html">https://www.rimpa.com/</a>
+              <p style="text-align: center">お問い合わせのお電話でも結構ですので、お気軽にご相談ください♡</p>
+
+              <p style="text-align: center">&nbsp;</p>
+
+              <p style="text-align: center">
+                <a href="#"><img alt="" src="../assets/customer/blog_thum.png" style="height: 30px; width: 150px" /></a>
               </p>
-            </div>
 
-            <div class="link_wrapper">
-              <h3>alt属性</h3>
-              <p>サンプルエステ　リンパ</p>
-            </div>
+              <p style="text-align: center">&nbsp;</p>
 
-            <div class="link_wrapper">
-              <h3>各種バナー</h3>
-              <ul>
-                <li>
-                  <img src="assets/customer/banner_sm.jpg" />
-                  <p>88*31(px)</p>
-                </li>
-                <li>
-                  <img src="assets/customer/banner_sm.jpg" />
-                  <p>160*45(px)</p>
-                </li>
-                <li>
-                  <img src="assets/customer/banner_sm.jpg" />
-                  <p>200*40(px)</p>
-                </li>
-              </ul>
+              <p style="text-align: center">当店では、十分なエステ経験・タイ古式経験がある講師により、</p>
+
+              <p style="text-align: center">親切・丁寧に講習された選ばれしセラピストが在籍しています。</p>
+
+              <p style="text-align: center">
+                <a href="#"><img alt="" src="../assets/customer/blog_thum.png" style="width: 200px; height: 128px" /></a>
+              </p>
+
+              <p style="text-align: center">&nbsp;</p>
+
+              <p style="text-align: center">
+                90分コース　<br />
+                13,000円
+              </p>
+
+              <p style="text-align: center">
+                120分コース<br />
+                18,000円
+              </p>
+
+              <p style="text-align: center">
+                150分コース<br />
+                23,000円
+              </p>
+
+              <p style="text-align: center">&nbsp;</p>
+
+              <p style="text-align: center">しっかりとしたオイルマッサージと当店自慢のセラピストの優しさで</p>
+
+              <p style="text-align: center">ときめきと好きが止まらないななめ45&deg;のメンズエステの体験を。</p>
+
+              <p style="text-align: center">&nbsp;</p>
+
+              <p style="text-align: center">この機会にぜひ一度、サンプルエステ リンパ をお試しください。</p>
+
+              <p style="text-align: center">リンパ は上手なオイルマッサージと女性の魅力をＭＩＸしてストレス社会で頑張る男性に</p>
+
+              <p style="text-align: center">「ときめきと好き。」をご提供するメンズエステです。</p>
+            </div>
+            <div class="nextPrevButtonCont">
+              <div class="item_button prevButton">
+                <p class="btnCont">
+                  <a class="btn" href="news_1.html">
+                    <span>＜ 前の記事</span>
+                  </a>
+                </p>
+              </div>
+              <div class="item_button nextButton">
+                <p class="btnCont">
+                  <a class="btn" href="news_1.html">
+                    <span>次の記事 ＞</span>
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- ======== /link_view ======== -->
-      <!-- ======== link_view ======== -->
-      <section class="link_view pdTop50 pdBottom140 m-pdTop20 m-pdBottom50">
-        <div class="link_view_cont cont">
-          <div class="sectionTitle sectionTitleLine textCenter">
-            <h3 class="sectionTitleTop">Link</h3>
-          </div>
-          <div class="sectionDesc textCenter">
-            <p>外部リンク一覧</p>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-          <div class="item banner">
-            <a href="#" target="_blank">
-              <img alt="" src="assets/customer/banner_sm.jpg" />
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- ======== /link_view ======== -->
+      <!-- ======== /news_views ======== -->
     </main>
     <!-- ======== /main ======== -->
     <!-- ======== footer ======== -->
@@ -365,28 +331,28 @@
           <div class="footerNav">
             <ul>
               <li class="display-inline-block">
-                <a href="index.html"> HOME </a>
+                <a href="../index.html"> HOME </a>
               </li>
               <li class="display-inline-block">
-                <a href="system.html"> SYSTEM </a>
+                <a href="../system.html"> SYSTEM </a>
               </li>
               <li class="display-inline-block">
-                <a href="schedule.html"> SCHEDULE </a>
+                <a href="../schedule.html"> SCHEDULE </a>
               </li>
               <li class="display-inline-block">
-                <a href="therapist.html"> THERAPIST </a>
+                <a href="../therapist.html"> THERAPIST </a>
               </li>
               <li class="display-inline-block">
-                <a href="reservation.html"> RESERVATION </a>
+                <a href="../reservation.html"> RESERVATION </a>
               </li>
               <li class="display-inline-block">
-                <a href="access.html"> ACCESS </a>
+                <a href="../access.html"> ACCESS </a>
               </li>
               <li class="display-inline-block">
-                <a href="recruit.html"> RECRUIT </a>
+                <a href="../recruit.html"> RECRUIT </a>
               </li>
               <li class="display-inline-block">
-                <a href="policy.html"> POLICY </a>
+                <a href="../policy.html"> POLICY </a>
               </li>
               <li>
                 <a target="_blank" alt="Twitter" href="https://twitter.com/"> <i class="fab fa-twitter" aria-hidden="true"></i>TWITTER<br /> </a>
@@ -395,15 +361,15 @@
                 <a target="_blank" alt="LINE" href="https://line.me/"> <i class="fab fa-line" aria-hidden="true"></i>LINE<br /> </a>
               </li>
               <li class="display-inline-block">
-                <a href="link.html"> <i class="fas fa-external-link-alt"></i>外部リンク </a>
+                <a href="../link.html"> <i class="fas fa-external-link-alt"></i>外部リンク </a>
               </li>
             </ul>
           </div>
         </div>
         <div class="footerBottom clearfix">
           <div class="footerLogo">
-            <a href="index.html" class="logo_link">
-              <img class="logo" alt="ロゴ" src="assets/customer/logo.png" />
+            <a href="../index.html" class="logo_link">
+              <img class="logo" alt="ロゴ" src="../assets/customer/logo.png" />
               <span>サンプルエステサイト</span>
             </a>
           </div>
@@ -413,9 +379,9 @@
           <div class="footerInfo displayNoneLess768">
             <a onclick='gtag("event", "tel", { "event_category": "cv", "event_label": "telclick", "value": 1 });' alt="09000000000" href="tel:09000000000">
               <p>
-                <span class="icon"><img class="" src="assets/customer/tel_white.png" /></span>
+                <span class="icon"><img class="" src="../assets/customer/tel_white.png" /></span>
                 09000000000
-                <span class="icon"><img class="" src="assets/customer/clock_white.png" /></span>
+                <span class="icon"><img class="" src="../assets/customer/clock_white.png" /></span>
                 10:00~05:00
               </p>
             </a>
@@ -437,7 +403,7 @@
             </a>
           </li>
           <li>
-            <a alt="webで予約" href="reservation.html">
+            <a alt="webで予約" href="../reservation.html">
               <i class="fas fa-edit"></i><br />
               WEB
             </a>

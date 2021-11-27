@@ -1,243 +1,14 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, user-scalable=no, initial-scale=1, user-scalable=no" />
-  <title>サンプルエステサイト　リンパ</title>
-  <meta name="description" content="ここにサイト説明が入ります" />
-  <meta name="keywords" content="ここに, キーワードが, 入ります" />
-  <link rel="canonical" href="index.html" />
-  <meta property="og:title" content="ここにOGTタイトルが入ります" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.ここにOGTURLが入ります.com/" />
-  <meta property="og:image" content="assets/customer/logo.png" />
-  <meta property="og:site_name" content="OGT用サイト名が入ります" />
-  <meta property="og:description" content="ここにOGTサイト説明が入ります" />
-  <meta property="og:locale" content="ja_JP" />
-  <meta name="csrf-param" content="" />
-  <meta name="csrf-token" content="" />
-  <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
-    <![endif]-->
-  <link rel="stylesheet" media="all" href="assets/lux_esthe.css" data-turbolinks-track="reload" />
-  <script src="assets/lux_esthe.js" data-turbolinks-track="reload"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <!-- css -->
-
-  <!-- ======== FONT ICON ======== -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109414251-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-109414251-2');
-    gtag('config', 'G-V6KSX2CPEG');
-  </script>
-</head>
-
-<body>
+@include('frontend.sections.header')
   <!-- ======== main ======== -->
-  <main class="priority">
     <!-- ======== header ======== -->
-    <header class="priority clearfix">
-      <div class="header_cont cont clearfix">
-        <div class="header_left">
-          <div class="header_logo">
-            <a class="logoLink" href="index.html">
-              <img class="logo logo_01" src="assets/customer/logo.png" />
-              <img class="logo logo_02" src="assets/customer/logo_secondary.png" />
-              <h1 class="logo_desc" style="color: #ffffff; font-family: 'Noto Serif JP', sans-serif; padding: 5px 0;">
-                サンプルエステサイト</h1>
-            </a>
-          </div>
-        </div>
-        <div class="header_right">
-          <div id="navBtnJs" class="navBar displayNoneMore1023">
-            <span data-open=""></span>
-            <div>
-              <i></i>
-              <i></i>
-              <i></i>
-            </div>
-          </div>
-        </div>
-        <div class="header_center">
-          <div class="navInfo">
-            <a onclick='gtag("event", "tel", { "event_category": "cv", "event_label": "telclick", "value": 1 });'
-              alt="09000000000" href="tel:09000000000" style="z-index: 20;">
-              <p class="timeAndTel">Tel：090-0000-0000</p>
-            </a>
-            <p class="timeAndTel">
-              Open：10:00~05:00
-              <br class="displayNoneLess1023" />
-              <span> (受付時間)09:30~05:00 </span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </header>
+    @include('frontend.sections.pageheader')
     <!-- ======== /header ======== -->
     <!-- ======== nav ======== -->
-    <nav class="navPc displayNoneLess1023">
-      <ul class="navItems clearfix" id="navItemsPc">
-        <li class="display-inline-block navItem riseFadeJs">
-          <a class="isCurrent" href="index.html">
-            HOME<br />
-            <small>ホーム</small>
-          </a>
-        </li>
-        <li class="display-inline-block navItem">
-          <a class="isCurrent" href="system.html">
-            SYSTEM<br />
-            <small>システム</small>
-          </a>
-        </li>
-        <li class="display-inline-block navItem riseFadeJs">
-          <a class="isCurrent" href="schedule.html">
-            SCHEDULE<br />
-            <small>スケジュール</small>
-          </a>
-        </li>
-        <li class="display-inline-block navItem riseFadeJs">
-          <a class="isCurrent" href="therapist.html">
-            THERAPIST<br />
-            <small>セラピスト</small>
-          </a>
-        </li>
-        <li class="display-inline-block navItem riseFadeJs">
-          <a class="isCurrent" href="./reservation.html">
-            RESERVATION<br />
-            <small>予約</small>
-          </a>
-        </li>
-        <li class="display-inline-block navItem riseFadeJs">
-          <a class="isCurrent" href="access.html">
-            ACCESS<br />
-            <small>アクセス</small>
-          </a>
-        </li>
-        <li class="display-inline-block navItem riseFadeJs">
-          <a class="isCurrent" href="recruit.html">
-            RECRUIT<br />
-            <small>求人</small>
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <nav id="navJs" class="navSpTb displayNoneMore1023">
-      <ul class="navItems">
-        <li class="display-block navItem riseFadeJs">
-          <a class="isCurrent" href="index.html">
-            HOME<br />
-            <small>ホーム</small>
-          </a>
-        </li>
-        <li class="display-block navItem riseFadeJs">
-          <a class="isCurrent" href="system.html">
-            SYSTEM<br />
-            <small>システム</small>
-          </a>
-        </li>
-        <li class="display-block navItem riseFadeJs">
-          <a class="isCurrent" href="schedule.html">
-            SCHEDULE<br />
-            <small>スケジュール</small>
-          </a>
-        </li>
-        <li class="display-block navItem riseFadeJs">
-          <a class="isCurrent" href="therapist.html">
-            THERAPIST<br />
-            <small>セラピスト</small>
-          </a>
-        </li>
-        <li class="display-block navItem riseFadeJs">
-          <a class="isCurrent" href="reservation.html">
-            RESERVATION<br />
-            <small>予約</small>
-          </a>
-        </li>
-        <li class="display-block navItem riseFadeJs">
-          <a class="isCurrent" href="access.html">
-            ACCESS<br />
-            <small>アクセス</small>
-          </a>
-        </li>
-        <li class="display-block navItem riseFadeJs">
-          <a class="isCurrent" href="recruit.html">
-            RECRUIT<br />
-            <small>求人</small>
-          </a>
-        </li>
-      </ul>
-
-      <div class="navInfo riseFadeJs">
-        <p>営業情報</p>
-        <a onclick='gtag("event", "tel", { "event_category": "cv", "event_label": "telclick", "value": 1 });'
-          alt="09000000000" href="tel:09000000000">
-          <p class="timeAndTel">
-            <span class="icon"><img class="" src="assets/customer/clock_gold.png" /></span>
-            10:00~05:00
-          </p>
-          <p class="timeAndTel">
-            <span class="icon"><img class="" src="assets/customer/tel_gold.png" /></span>
-            09000000000
-          </p>
-        </a>
-      </div>
-    </nav>
+    @include('frontend.sections.nav')
     <!-- ======== /nav ======== -->
 
     <!-- ======== mainView ======== -->
-    <section class="mainView" id="scrollTopPoint">
-      <div class="mainViewCont">
-        <div class="mainViewInner">
-          <p class="title effectTitleTxtJs">
-            <span>S</span>
-            <span>A</span>
-            <span>M</span>
-            <span>P</span>
-            <span>L</span>
-            <span>E</span>
-            <span>E</span>
-            <span>s</span>
-            <span>t</span>
-            <span>h</span>
-            <span>e</span>
-          </p>
-          <p class="subTitle effectSubTitleTxtJs">
-            <span>R</span>
-            <span>I</span>
-            <span>M</span>
-            <span>P</span>
-            <span>A</span>
-            <span>-</span>
-            <span>D</span>
-            <span>0</span>
-          </p>
-          <p class="description effectDescriptionJs text-center">
-            <span>
-              は、おもてなしの精神がたっぷりと詰まったセラピストによる<br />
-              ときめき（楽しみ）と好き（ドキドキ）<br class="visible-xs" />
-              が止まらない（夢中になる）<br class="visible-xs" />
-              ななめ45°（常に進化する）<br />
-              のメンズエステです。
-            </span>
-          </p>
-        </div>
-      </div>
-      <div class="esthe_desc sliding_text">
-        <h1 class="sliding_textTxt">サンプルエステサイト はJR〇〇駅東南口徒歩1分の場所にある完全個室型エステです</h1>
-      </div>
-    </section>
+    @include('frontend.sections.mainview')
     <!-- ======== /mainView ======== -->
 
     <!-- ======== todayStaffView ======== -->
@@ -252,13 +23,13 @@
         </div>
         <div class="todayStaffList clearfix">
           <div class="item clearfix">
-            <a href="therapist/therapist_1.html">
+            <a href="{{ route('therapist_1') }}">
               <div class="item_img">
-                <img data-src="assets/customer/staff.png" class="lazyload" src="assets/customer/staff.png" />
+                <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" src="{{ asset('bazu/assets/customer/staff.png') }}" />
               </div>
               <div class="itemInfo">
                 <p>
-                  <label class="scheduleIcon"><img src="assets/customer/clock_white.png" /></label>
+                  <label class="scheduleIcon"><img src="{{ asset('bazu/assets/customer/clock_white.png') }}" /></label>
                   10:00 ~ 19:30
                   <br class="displayNoneMore768" />
                   <span class="scheduleType"> 出勤 </span>
@@ -269,13 +40,13 @@
             </a>
           </div>
           <div class="item clearfix">
-            <a href="therapist/therapist_1.html">
+            <a href="{{ route('therapist_1') }}">
               <div class="item_img">
-                <img data-src="assets/customer/staff.png" class="lazyload" src="assets/customer/staff.png" />
+                <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" src="{{ asset('bazu/assets/customer/staff.png') }}" />
               </div>
               <div class="itemInfo">
                 <p>
-                  <label class="scheduleIcon"><img src="assets/customer/clock_white.png" /></label>
+                  <label class="scheduleIcon"><img src="{{ asset('bazu/assets/customer/clock_white.png') }}" /></label>
                   10:00 ~ 19:30
                   <br class="displayNoneMore768" />
                   <span class="scheduleType"> 出勤 </span>
@@ -286,13 +57,13 @@
             </a>
           </div>
           <div class="item clearfix">
-            <a href="therapist/therapist_1.html">
+            <a href="{{ route('therapist_1') }}">
               <div class="item_img">
-                <img data-src="assets/customer/staff.png" class="lazyload" src="assets/customer/staff.png" />
+                <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" src="{{ asset('bazu/assets/customer/staff.png') }}" />
               </div>
               <div class="itemInfo">
                 <p>
-                  <label class="scheduleIcon"><img src="assets/customer/clock_white.png" /></label>
+                  <label class="scheduleIcon"><img src="{{ asset('bazu/assets/customer/clock_white.png') }}" /></label>
                   10:00 ~ 19:30
                   <br class="displayNoneMore768" />
                   <span class="scheduleType"> 出勤 </span>
@@ -303,13 +74,13 @@
             </a>
           </div>
           <div class="item clearfix">
-            <a href="therapist/therapist_1.html">
+            <a href="{{ route('therapist_1') }}">
               <div class="item_img">
-                <img data-src="assets/customer/staff.png" class="lazyload" src="assets/customer/staff.png" />
+                <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" src="{{ asset('bazu/assets/customer/staff.png') }}" />
               </div>
               <div class="itemInfo">
                 <p>
-                  <label class="scheduleIcon"><img src="assets/customer/clock_white.png" /></label>
+                  <label class="scheduleIcon"><img src="{{ asset('bazu/assets/customer/clock_white.png') }}" /></label>
                   10:00 ~ 19:30
                   <br class="displayNoneMore768" />
                   <span class="scheduleType"> 出勤 </span>
@@ -320,13 +91,13 @@
             </a>
           </div>
           <div class="item clearfix">
-            <a href="therapist/therapist_1.html">
+            <a href="{{ route('therapist_1') }}">
               <div class="item_img">
-                <img data-src="assets/customer/staff.png" class="lazyload" src="assets/customer/staff.png" />
+                <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" src="{{ asset('bazu/assets/customer/staff.png') }}" />
               </div>
               <div class="itemInfo">
                 <p>
-                  <label class="scheduleIcon"><img src="assets/customer/clock_white.png" /></label>
+                  <label class="scheduleIcon"><img src="{{ asset('bazu/assets/customer/clock_white.png') }}" /></label>
                   10:00 ~ 19:30
                   <br class="displayNoneMore768" />
                   <span class="scheduleType"> 出勤 </span>
@@ -337,13 +108,13 @@
             </a>
           </div>
           <div class="item clearfix">
-            <a href="therapist/therapist_1.html">
+            <a href="{{ route('therapist_1') }}">
               <div class="item_img">
-                <img data-src="assets/customer/staff.png" class="lazyload" src="assets/customer/staff.png" />
+                <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" src="{{ asset('bazu/assets/customer/staff.png') }}" />
               </div>
               <div class="itemInfo">
                 <p>
-                  <label class="scheduleIcon"><img src="assets/customer/clock_white.png" /></label>
+                  <label class="scheduleIcon"><img src="{{ asset('bazu/assets/customer/clock_white.png') }}" /></label>
                   10:00 ~ 19:30
                   <br class="displayNoneMore768" />
                   <span class="scheduleType"> 出勤 </span>
@@ -354,13 +125,13 @@
             </a>
           </div>
           <div class="item clearfix">
-            <a href="therapist/therapist_1.html">
+            <a href="{{ route('therapist_1') }}">
               <div class="item_img">
-                <img data-src="assets/customer/staff.png" class="lazyload" src="assets/customer/staff.png" />
+                <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" src="{{ asset('bazu/assets/customer/staff.png') }}" />
               </div>
               <div class="itemInfo">
                 <p>
-                  <label class="scheduleIcon"><img src="assets/customer/clock_white.png" /></label>
+                  <label class="scheduleIcon"><img src="{{ asset('bazu/assets/customer/clock_white.png') }}" /></label>
                   10:00 ~ 19:30
                   <br class="displayNoneMore768" />
                   <span class="scheduleType"> 出勤 </span>
@@ -371,13 +142,13 @@
             </a>
           </div>
           <div class="item clearfix">
-            <a href="therapist/therapist_1.html">
+            <a href="{{ route('therapist_1') }}">
               <div class="item_img">
-                <img data-src="assets/customer/staff.png" class="lazyload" src="assets/customer/staff.png" />
+                <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" src="{{ asset('bazu/assets/customer/staff.png') }}" />
               </div>
               <div class="itemInfo">
                 <p>
-                  <label class="scheduleIcon"><img src="assets/customer/clock_white.png" /></label>
+                  <label class="scheduleIcon"><img src="{{ asset('bazu/assets/customer/clock_white.png') }}" /></label>
                   10:00 ~ 19:30
                   <br class="displayNoneMore768" />
                   <span class="scheduleType"> 出勤 </span>
@@ -388,13 +159,13 @@
             </a>
           </div>
           <div class="item clearfix">
-            <a href="therapist/therapist_1.html">
+            <a href="{{ route('therapist_1') }}">
               <div class="item_img">
-                <img data-src="assets/customer/staff.png" class="lazyload" src="assets/customer/staff.png" />
+                <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" src="{{ asset('bazu/assets/customer/staff.png') }}" />
               </div>
               <div class="itemInfo">
                 <p>
-                  <label class="scheduleIcon"><img src="assets/customer/clock_white.png" /></label>
+                  <label class="scheduleIcon"><img src="{{ asset('bazu/assets/customer/clock_white.png') }}" /></label>
                   10:00 ~ 19:30
                   <br class="displayNoneMore768" />
                   <span class="scheduleType"> 出勤 </span>
@@ -407,7 +178,7 @@
         </div>
         <div class="item_button">
           <p class="btnCont">
-            <a class="btn" href="schedule.html">
+            <a class="btn" href="{{ route('schedule') }}">
               <span>今週のスケジュール ＞＞</span>
             </a>
           </p>
@@ -445,7 +216,7 @@
             </div>
             <div class="itemnewssCont">
               <p style="text-align: center">
-                <a href="#"><img alt="" src="assets/customer/gif.png" /></a>
+                <a href="#"><img alt="" src="{{ asset('bazu/assets/customer/gif.png') }}" /></a>
               </p>
 
               <p style="text-align: center">
@@ -465,7 +236,7 @@
 
               <p style="text-align: center">愛嬌たっぷりのルックス、誰からも愛されるすごく可愛らしいお顔立ちをされています。</p>
               <p style="text-align: center">
-                <a href="therapist/therapist_1.html">
+                <a href="{{ route('therapist_1') }}">
                   <span style="color: #3498db">
                     <span style="font-size: 16px">
                       <strong>山田花子(23歳)</strong>
@@ -481,7 +252,7 @@
 
               <p style="text-align: center">愛嬌たっぷりのルックス、誰からも愛されるすごく可愛らしいお顔立ちをされています。</p>
               <p style="text-align: center">
-                <a href="therapist/therapist_1.html">
+                <a href="{{ route('therapist_1') }}">
                   <span style="color: #3498db">
                     <span style="font-size: 16px">
                       <strong>山田花子(23歳)</strong>
@@ -549,20 +320,20 @@
         <div class="item">
           <div class="item_img">
             <a target="_blank" href="#">
-              <img data-src="assets/customer/banner_md.png" class="lazyload" alt="サンプルエステサイトの求人"
-                src="assets/customer/lazy/slide-d475a0d926dee2e319963275f0a084bf907043ca0c8df63f2bea072088fd27a6.jpg" />
+              <img data-src="{{ asset('bazu/assets/customer/banner_md.png') }}" class="lazyload" alt="サンプルエステサイトの求人"
+                src="{{ asset('bazu/assets/customer/lazy/slide-d475a0d926dee2e319963275f0a084bf907043ca0c8df63f2bea072088fd27a6.jpg.png') }}" />
             </a>
             <a target="_blank" href="https://www.esthe-ranking.jp/esthe-ranking/be6a3f0d-8704-46c3-8629-ce5ab2bca005">
-              <img data-src="assets/customer/banner_md.png" class="lazyload" alt="サンプルエステ"
-                src="assets/customer/lazy/slide-d475a0d926dee2e319963275f0a084bf907043ca0c8df63f2bea072088fd27a6.jpg" />
+              <img data-src="{{ asset('bazu/assets/customer/banner_md.png') }}" class="lazyload" alt="サンプルエステ"
+                src="{{ asset('bazu/assets/customer/lazy/slide-d475a0d926dee2e319963275f0a084bf907043ca0c8df63f2bea072088fd27a6.jpg.png') }}" />
             </a>
             <a target="_blank" href="https://www.instagram.com/bazu_ca/?hl=ja">
-              <img data-src="assets/customer/banner_md.png" class="lazyload" alt="〇〇　メンズエステ　リンパ　インスタグラム"
-                src="assets/customer/lazy/slide-d475a0d926dee2e319963275f0a084bf907043ca0c8df63f2bea072088fd27a6.jpg" />
+              <img data-src="{{ asset('bazu/assets/customer/banner_md.png') }}" class="lazyload" alt="〇〇　メンズエステ　リンパ　インスタグラム"
+                src="{{ asset('bazu/assets/customer/lazy/slide-d475a0d926dee2e319963275f0a084bf907043ca0c8df63f2bea072088fd27a6.jpg.png') }}" />
             </a>
             <a target="_blank" href="https://pay2.star-pay.jp/site/pc/shop.php?payc=A7140">
-              <img data-src="assets/customer/banner_md.png" class="lazyload" alt="サンプルエステサイト のカード決済"
-                src="assets/customer/lazy/slide-d475a0d926dee2e319963275f0a084bf907043ca0c8df63f2bea072088fd27a6.jpg" />
+              <img data-src="{{ asset('bazu/assets/customer/banner_md.png') }}" class="lazyload" alt="サンプルエステサイト のカード決済"
+                src="{{ asset('bazu/assets/customer/lazy/slide-d475a0d926dee2e319963275f0a084bf907043ca0c8df63f2bea072088fd27a6.jpg.png') }}" />
             </a>
           </div>
         </div>
@@ -587,10 +358,10 @@
             <div class="blogsListPc displayNoneLess1023">
               <dl class="clearfix">
 
-                <a class="blogItem" href="blog/blog.html_01.html">
+                <a class="blogItem" href="{{ route('blog_1') }}">
                   <dt>
-                    <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                      src="assets/customer/blog_thum.png" />
+                    <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                      src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                   </dt>
                   <dd>
                     <h3>ブログタイトル</h3>
@@ -598,16 +369,16 @@
                     <p class="blogPostedDay blogInfo">2021/11/xx(日) 21:00</p>
                     <p class="writer blogInfo">
                       はなこ
-                      <span class="icon"><img class="blogThumb" src="assets/customer/pen.png" /></span>
+                      <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen.png') }}" /></span>
                     </p>
                   </dd>
                 </a>
                 <hr />
 
-                <a class="blogItem" href="blog/blog.html_01.html">
+                <a class="blogItem" href="{{ route('blog_1') }}">
                   <dt>
-                    <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                      src="assets/customer/blog_thum.png" />
+                    <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                      src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                   </dt>
                   <dd>
                     <h3>ブログタイトル</h3>
@@ -615,16 +386,16 @@
                     <p class="blogPostedDay blogInfo">2021/11/xx(日) 21:00</p>
                     <p class="writer blogInfo">
                       はなこ
-                      <span class="icon"><img class="blogThumb" src="assets/customer/pen.png" /></span>
+                      <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen.png') }}" /></span>
                     </p>
                   </dd>
                 </a>
                 <hr />
 
-                <a class="blogItem" href="blog/blog.html_01.html">
+                <a class="blogItem" href="{{ route('blog_1') }}">
                   <dt>
-                    <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                      src="assets/customer/blog_thum.png" />
+                    <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                      src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                   </dt>
                   <dd>
                     <h3>ブログタイトル</h3>
@@ -632,16 +403,16 @@
                     <p class="blogPostedDay blogInfo">2021/11/xx(日) 21:00</p>
                     <p class="writer blogInfo">
                       はなこ
-                      <span class="icon"><img class="blogThumb" src="assets/customer/pen.png" /></span>
+                      <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen.png') }}" /></span>
                     </p>
                   </dd>
                 </a>
                 <hr />
 
-                <a class="blogItem" href="blog/blog.html_01.html">
+                <a class="blogItem" href="{{ route('blog_1') }}">
                   <dt>
-                    <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                      src="assets/customer/blog_thum.png" />
+                    <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                      src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                   </dt>
                   <dd>
                     <h3>ブログタイトル</h3>
@@ -649,16 +420,16 @@
                     <p class="blogPostedDay blogInfo">2021/11/xx(日) 21:00</p>
                     <p class="writer blogInfo">
                       はなこ
-                      <span class="icon"><img class="blogThumb" src="assets/customer/pen.png" /></span>
+                      <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen.png') }}" /></span>
                     </p>
                   </dd>
                 </a>
                 <hr />
 
-                <a class="blogItem" href="blog/blog.html_01.html">
+                <a class="blogItem" href="{{ route('blog_1') }}">
                   <dt>
-                    <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                      src="assets/customer/blog_thum.png" />
+                    <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                      src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                   </dt>
                   <dd>
                     <h3>ブログタイトル</h3>
@@ -666,16 +437,16 @@
                     <p class="blogPostedDay blogInfo">2021/11/xx(日) 21:00</p>
                     <p class="writer blogInfo">
                       はなこ
-                      <span class="icon"><img class="blogThumb" src="assets/customer/pen.png" /></span>
+                      <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen.png') }}" /></span>
                     </p>
                   </dd>
                 </a>
                 <hr />
 
-                <a class="blogItem" href="blog/blog.html_01.html">
+                <a class="blogItem" href="{{ route('blog_1') }}">
                   <dt>
-                    <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                      src="assets/customer/blog_thum.png" />
+                    <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                      src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                   </dt>
                   <dd>
                     <h3>ブログタイトル</h3>
@@ -683,16 +454,16 @@
                     <p class="blogPostedDay blogInfo">2021/11/xx(日) 21:00</p>
                     <p class="writer blogInfo">
                       はなこ
-                      <span class="icon"><img class="blogThumb" src="assets/customer/pen.png" /></span>
+                      <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen.png') }}" /></span>
                     </p>
                   </dd>
                 </a>
                 <hr />
 
-                <a class="blogItem" href="blog/blog.html_01.html">
+                <a class="blogItem" href="{{ route('blog_1') }}">
                   <dt>
-                    <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                      src="assets/customer/blog_thum.png" />
+                    <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                      src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                   </dt>
                   <dd>
                     <h3>ブログタイトル</h3>
@@ -700,16 +471,16 @@
                     <p class="blogPostedDay blogInfo">2021/11/xx(日) 21:00</p>
                     <p class="writer blogInfo">
                       はなこ
-                      <span class="icon"><img class="blogThumb" src="assets/customer/pen.png" /></span>
+                      <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen.png') }}" /></span>
                     </p>
                   </dd>
                 </a>
                 <hr />
 
-                <a class="blogItem" href="blog/blog.html_01.html">
+                <a class="blogItem" href="{{ route('blog_1') }}">
                   <dt>
-                    <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                      src="assets/customer/blog_thum.png" />
+                    <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                      src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                   </dt>
                   <dd>
                     <h3>ブログタイトル</h3>
@@ -717,16 +488,16 @@
                     <p class="blogPostedDay blogInfo">2021/11/xx(日) 21:00</p>
                     <p class="writer blogInfo">
                       はなこ
-                      <span class="icon"><img class="blogThumb" src="assets/customer/pen.png" /></span>
+                      <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen.png') }}" /></span>
                     </p>
                   </dd>
                 </a>
                 <hr />
 
-                <a class="blogItem" href="blog/blog.html_01.html">
+                <a class="blogItem" href="{{ route('blog_1') }}">
                   <dt>
-                    <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                      src="assets/customer/blog_thum.png" />
+                    <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                      src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                   </dt>
                   <dd>
                     <h3>ブログタイトル</h3>
@@ -734,16 +505,16 @@
                     <p class="blogPostedDay blogInfo">2021/11/xx(日) 21:00</p>
                     <p class="writer blogInfo">
                       はなこ
-                      <span class="icon"><img class="blogThumb" src="assets/customer/pen.png" /></span>
+                      <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen.png') }}" /></span>
                     </p>
                   </dd>
                 </a>
                 <hr />
 
-                <a class="blogItem" href="blog/blog.html_01.html">
+                <a class="blogItem" href="{{ route('blog_1') }}">
                   <dt>
-                    <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                      src="assets/customer/blog_thum.png" />
+                    <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                      src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                   </dt>
                   <dd>
                     <h3>ブログタイトル</h3>
@@ -751,16 +522,16 @@
                     <p class="blogPostedDay blogInfo">2021/11/xx(日) 21:00</p>
                     <p class="writer blogInfo">
                       はなこ
-                      <span class="icon"><img class="blogThumb" src="assets/customer/pen.png" /></span>
+                      <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen.png') }}" /></span>
                     </p>
                   </dd>
                 </a>
                 <hr />
 
-                <a class="blogItem" href="blog/blog.html_01.html">
+                <a class="blogItem" href="{{ route('blog_1') }}">
                   <dt>
-                    <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                      src="assets/customer/blog_thum.png" />
+                    <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                      src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                   </dt>
                   <dd>
                     <h3>ブログタイトル</h3>
@@ -768,16 +539,16 @@
                     <p class="blogPostedDay blogInfo">2021/11/xx(日) 21:00</p>
                     <p class="writer blogInfo">
                       はなこ
-                      <span class="icon"><img class="blogThumb" src="assets/customer/pen.png" /></span>
+                      <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen.png') }}" /></span>
                     </p>
                   </dd>
                 </a>
                 <hr />
 
-                <a class="blogItem" href="blog/blog.html_01.html">
+                <a class="blogItem" href="{{ route('blog_1') }}">
                   <dt>
-                    <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                      src="assets/customer/blog_thum.png" />
+                    <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                      src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                   </dt>
                   <dd>
                     <h3>ブログタイトル</h3>
@@ -785,16 +556,16 @@
                     <p class="blogPostedDay blogInfo">2021/11/xx(日) 21:00</p>
                     <p class="writer blogInfo">
                       はなこ
-                      <span class="icon"><img class="blogThumb" src="assets/customer/pen.png" /></span>
+                      <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen.png') }}" /></span>
                     </p>
                   </dd>
                 </a>
                 <hr />
 
-                <a class="blogItem" href="blog/blog.html_01.html">
+                <a class="blogItem" href="{{ route('blog_1') }}">
                   <dt>
-                    <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                      src="assets/customer/blog_thum.png" />
+                    <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                      src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                   </dt>
                   <dd>
                     <h3>ブログタイトル</h3>
@@ -802,16 +573,16 @@
                     <p class="blogPostedDay blogInfo">2021/11/xx(日) 21:00</p>
                     <p class="writer blogInfo">
                       はなこ
-                      <span class="icon"><img class="blogThumb" src="assets/customer/pen.png" /></span>
+                      <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen.png') }}" /></span>
                     </p>
                   </dd>
                 </a>
                 <hr />
 
-                <a class="blogItem" href="blog/blog.html_01.html">
+                <a class="blogItem" href="{{ route('blog_1') }}">
                   <dt>
-                    <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                      src="assets/customer/blog_thum.png" />
+                    <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                      src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                   </dt>
                   <dd>
                     <h3>ブログタイトル</h3>
@@ -819,7 +590,7 @@
                     <p class="blogPostedDay blogInfo">2021/11/xx(日) 21:00</p>
                     <p class="writer blogInfo">
                       はなこ
-                      <span class="icon"><img class="blogThumb" src="assets/customer/pen.png" /></span>
+                      <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen.png') }}" /></span>
                     </p>
                   </dd>
                 </a>
@@ -834,13 +605,13 @@
                 <div class="swiper-wrapper">
 
                   <div class="swiper-slide">
-                    <a class="blogItem" href="blog.html">
-                      <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                        src="assets/customer/blog_thum.png" />
+                    <a class="blogItem" href="{{ route('blog') }}">
+                      <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                        src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                       <div class="blogInfoCont">
                         <p class="writer blogInfo">
                           はなこ
-                          <span class="icon"><img class="blogThumb" src="assets/customer/pen_white.png" /></span>
+                          <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen_white.png') }}" /></span>
                         </p>
                         <p>ブログタイトル</p>
                       </div>
@@ -848,13 +619,13 @@
                   </div>
 
                   <div class="swiper-slide">
-                    <a class="blogItem" href="blog.html">
-                      <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                        src="assets/customer/blog_thum.png" />
+                    <a class="blogItem" href="{{ route('blog') }}">
+                      <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                        src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                       <div class="blogInfoCont">
                         <p class="writer blogInfo">
                           はなこ
-                          <span class="icon"><img class="blogThumb" src="assets/customer/pen_white.png" /></span>
+                          <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen_white.png') }}" /></span>
                         </p>
                         <p>ブログタイトル</p>
                       </div>
@@ -862,13 +633,13 @@
                   </div>
 
                   <div class="swiper-slide">
-                    <a class="blogItem" href="blog.html">
-                      <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                        src="assets/customer/blog_thum.png" />
+                    <a class="blogItem" href="{{ route('blog') }}">
+                      <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                        src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                       <div class="blogInfoCont">
                         <p class="writer blogInfo">
                           はなこ
-                          <span class="icon"><img class="blogThumb" src="assets/customer/pen_white.png" /></span>
+                          <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen_white.png') }}" /></span>
                         </p>
                         <p>ブログタイトル</p>
                       </div>
@@ -876,13 +647,13 @@
                   </div>
 
                   <div class="swiper-slide">
-                    <a class="blogItem" href="blog.html">
-                      <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                        src="assets/customer/blog_thum.png" />
+                    <a class="blogItem" href="{{ route('blog') }}">
+                      <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                        src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                       <div class="blogInfoCont">
                         <p class="writer blogInfo">
                           はなこ
-                          <span class="icon"><img class="blogThumb" src="assets/customer/pen_white.png" /></span>
+                          <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen_white.png') }}" /></span>
                         </p>
                         <p>ブログタイトル</p>
                       </div>
@@ -890,13 +661,13 @@
                   </div>
 
                   <div class="swiper-slide">
-                    <a class="blogItem" href="blog.html">
-                      <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                        src="assets/customer/blog_thum.png" />
+                    <a class="blogItem" href="{{ route('blog') }}">
+                      <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                        src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                       <div class="blogInfoCont">
                         <p class="writer blogInfo">
                           はなこ
-                          <span class="icon"><img class="blogThumb" src="assets/customer/pen_white.png" /></span>
+                          <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen_white.png') }}" /></span>
                         </p>
                         <p>ブログタイトル</p>
                       </div>
@@ -904,13 +675,13 @@
                   </div>
 
                   <div class="swiper-slide">
-                    <a class="blogItem" href="blog.html">
-                      <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                        src="assets/customer/blog_thum.png" />
+                    <a class="blogItem" href="{{ route('blog') }}">
+                      <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                        src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                       <div class="blogInfoCont">
                         <p class="writer blogInfo">
                           はなこ
-                          <span class="icon"><img class="blogThumb" src="assets/customer/pen_white.png" /></span>
+                          <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen_white.png') }}" /></span>
                         </p>
                         <p>ブログタイトル</p>
                       </div>
@@ -918,13 +689,13 @@
                   </div>
 
                   <div class="swiper-slide">
-                    <a class="blogItem" href="blog.html">
-                      <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                        src="assets/customer/blog_thum.png" />
+                    <a class="blogItem" href="{{ route('blog') }}">
+                      <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                        src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                       <div class="blogInfoCont">
                         <p class="writer blogInfo">
                           はなこ
-                          <span class="icon"><img class="blogThumb" src="assets/customer/pen_white.png" /></span>
+                          <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen_white.png') }}" /></span>
                         </p>
                         <p>ブログタイトル</p>
                       </div>
@@ -932,13 +703,13 @@
                   </div>
 
                   <div class="swiper-slide">
-                    <a class="blogItem" href="blog.html">
-                      <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                        src="assets/customer/blog_thum.png" />
+                    <a class="blogItem" href="{{ route('blog') }}">
+                      <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                        src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                       <div class="blogInfoCont">
                         <p class="writer blogInfo">
                           はな
-                          <span class="icon"><img class="blogThumb" src="assets/customer/pen_white.png" /></span>
+                          <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen_white.png') }}" /></span>
                         </p>
                         <p>ブログタイトル</p>
                       </div>
@@ -946,13 +717,13 @@
                   </div>
 
                   <div class="swiper-slide">
-                    <a class="blogItem" href="blog.html">
-                      <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                        src="assets/customer/blog_thum.png" />
+                    <a class="blogItem" href="{{ route('blog') }}">
+                      <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                        src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                       <div class="blogInfoCont">
                         <p class="writer blogInfo">
                           はなこ
-                          <span class="icon"><img class="blogThumb" src="assets/customer/pen_white.png" /></span>
+                          <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen_white.png') }}" /></span>
                         </p>
                         <p>ブログタイトル</p>
                       </div>
@@ -960,13 +731,13 @@
                   </div>
 
                   <div class="swiper-slide">
-                    <a class="blogItem" href="blog.html">
-                      <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                        src="assets/customer/blog_thum.png" />
+                    <a class="blogItem" href="{{ route('blog') }}">
+                      <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                        src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                       <div class="blogInfoCont">
                         <p class="writer blogInfo">
                           はなこ
-                          <span class="icon"><img class="blogThumb" src="assets/customer/pen_white.png" /></span>
+                          <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen_white.png') }}" /></span>
                         </p>
                         <p>ブログタイトル</p>
                       </div>
@@ -974,13 +745,13 @@
                   </div>
 
                   <div class="swiper-slide">
-                    <a class="blogItem" href="blog.html">
-                      <img data-src="assets/customer/blog_thum.png" class="lazyload blogThumb" alt=""
-                        src="assets/customer/blog_thum.png" />
+                    <a class="blogItem" href="{{ route('blog') }}">
+                      <img data-src="{{ asset('bazu/assets/customer/blog_thum.png') }}" class="lazyload blogThumb" alt=""
+                        src="{{ asset('bazu/assets/customer/blog_thum.png') }}" />
                       <div class="blogInfoCont">
                         <p class="writer blogInfo">
                           はなこ
-                          <span class="icon"><img class="blogThumb" src="assets/customer/pen_white.png" /></span>
+                          <span class="icon"><img class="blogThumb" src="{{ asset('bazu/assets/customer/pen_white.png') }}" /></span>
                         </p>
                         <p>ブログタイトル</p>
                       </div>
@@ -1006,10 +777,8 @@
               <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
-                  <a class="itemPickUpStaff" href="therapist/therapist_1.html">
-                    <div class="itemPickUpImg">
-                      <img data-src="assets/customer/staff.png" class="lazyload" alt=""
-                        src="assets/customer/staff.png" />
+                  <a class="itemPickUpStaff" href="{{ route('therapist_1') }}">
+                    <div class="itemPickUpImg"> <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" alt="" src="{{ asset('bazu/assets/customer/staff.png') }}" />
                     </div>
                     <div class="itemPickUpInfo">
                       <div class="mark">
@@ -1021,10 +790,8 @@
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="itemPickUpStaff" href="therapist/therapist_1.html">
-                    <div class="itemPickUpImg">
-                      <img data-src="assets/customer/staff.png" class="lazyload" alt=""
-                        src="assets/customer/staff.png" />
+                  <a class="itemPickUpStaff" href="{{ route('therapist_1') }}">
+                    <div class="itemPickUpImg"> <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" alt="" src="{{ asset('bazu/assets/customer/staff.png') }}" />
                     </div>
                     <div class="itemPickUpInfo">
                       <div class="mark">
@@ -1036,10 +803,8 @@
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="itemPickUpStaff" href="therapist/therapist_1.html">
-                    <div class="itemPickUpImg">
-                      <img data-src="assets/customer/staff.png" class="lazyload" alt=""
-                        src="assets/customer/staff.png" />
+                  <a class="itemPickUpStaff" href="{{ route('therapist_1') }}">
+                    <div class="itemPickUpImg"> <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" alt="" src="{{ asset('bazu/assets/customer/staff.png') }}" />
                     </div>
                     <div class="itemPickUpInfo">
                       <div class="mark">
@@ -1051,10 +816,8 @@
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="itemPickUpStaff" href="therapist/therapist_1.html">
-                    <div class="itemPickUpImg">
-                      <img data-src="assets/customer/staff.png" class="lazyload" alt=""
-                        src="assets/customer/staff.png" />
+                  <a class="itemPickUpStaff" href="{{ route('therapist_1') }}">
+                    <div class="itemPickUpImg"> <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" alt="" src="{{ asset('bazu/assets/customer/staff.png') }}" />
                     </div>
                     <div class="itemPickUpInfo">
                       <div class="mark">
@@ -1066,10 +829,9 @@
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="itemPickUpStaff" href="therapist/therapist_1.html">
+                  <a class="itemPickUpStaff" href="{{ route('therapist_1') }}">
                     <div class="itemPickUpImg">
-                      <img data-src="assets/customer/staff.png" class="lazyload" alt=""
-                        src="assets/customer/staff.png" />
+                      <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" alt="" src="{{ asset('bazu/assets/customer/staff.png') }}" />
                     </div>
                     <div class="itemPickUpInfo">
                       <div class="mark">
@@ -1081,10 +843,9 @@
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="itemPickUpStaff" href="therapist/therapist_1.html">
+                  <a class="itemPickUpStaff" href="{{ route('therapist_1') }}">
                     <div class="itemPickUpImg">
-                      <img data-src="assets/customer/staff.png" class="lazyload" alt=""
-                        src="assets/customer/staff.png" />
+                      <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" alt="" src="{{ asset('bazu/assets/customer/staff.png') }}" />
                     </div>
                     <div class="itemPickUpInfo">
                       <div class="mark">
@@ -1096,10 +857,9 @@
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="itemPickUpStaff" href="therapist/therapist_1.html">
+                  <a class="itemPickUpStaff" href="{{ route('therapist_1') }}">
                     <div class="itemPickUpImg">
-                      <img data-src="assets/customer/staff.png" class="lazyload" alt=""
-                        src="assets/customer/staff.png" />
+                      <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" alt="" src="{{ asset('bazu/assets/customer/staff.png') }}" />
                     </div>
                     <div class="itemPickUpInfo">
                       <div class="mark">
@@ -1111,10 +871,9 @@
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="itemPickUpStaff" href="therapist/therapist_1.html">
+                  <a class="itemPickUpStaff" href="{{ route('therapist_1') }}">
                     <div class="itemPickUpImg">
-                      <img data-src="assets/customer/staff.png" class="lazyload" alt=""
-                        src="assets/customer/staff.png" />
+                      <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" alt="" src="{{ asset('bazu/assets/customer/staff.png') }}" />
                     </div>
                     <div class="itemPickUpInfo">
                       <div class="mark">
@@ -1126,10 +885,9 @@
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="itemPickUpStaff" href="therapist/therapist_1.html">
+                  <a class="itemPickUpStaff" href="{{ route('therapist_1') }}">
                     <div class="itemPickUpImg">
-                      <img data-src="assets/customer/staff.png" class="lazyload" alt=""
-                        src="assets/customer/staff.png" />
+                      <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" alt="" src="{{ asset('bazu/assets/customer/staff.png') }}" />
                     </div>
                     <div class="itemPickUpInfo">
                       <div class="mark">
@@ -1141,10 +899,9 @@
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="itemPickUpStaff" href="therapist/therapist_1.html">
+                  <a class="itemPickUpStaff" href="{{ route('therapist_1') }}">
                     <div class="itemPickUpImg">
-                      <img data-src="assets/customer/staff.png" class="lazyload" alt=""
-                        src="assets/customer/staff.png" />
+                      <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" alt="" src="{{ asset('bazu/assets/customer/staff.png') }}" />
                     </div>
                     <div class="itemPickUpInfo">
                       <div class="mark">
@@ -1156,10 +913,9 @@
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="itemPickUpStaff" href="therapist/therapist_1.html">
+                  <a class="itemPickUpStaff" href="{{ route('therapist_1') }}">
                     <div class="itemPickUpImg">
-                      <img data-src="assets/customer/staff.png" class="lazyload" alt=""
-                        src="assets/customer/staff.png" />
+                      <img data-src="{{ asset('bazu/assets/customer/staff.png') }}" class="lazyload" alt="" src="{{ asset('bazu/assets/customer/staff.png') }}" />
                     </div>
                     <div class="itemPickUpInfo">
                       <div class="mark">
@@ -1197,42 +953,42 @@
           <!-- news-list-wrapper -->
           <div class="show_more_content clearfix">
             <div class="item">
-              <a href="news/news_1.html">
+              <a href="{{ route('news_1') }}">
                 <label>NEWS</label>
                 <p class="item_time">2021/11/xx(日) 7:00</p>
                 <h3 class="itemTitle">♡11月14日のご案内状況♡</h3>
               </a>
             </div>
             <div class="item">
-              <a href="news/news_1.html">
+              <a href="{{ route('news_1') }}">
                 <label>NEWS</label>
                 <p class="item_time">2021/11/xx(日) 7:00</p>
                 <h3 class="itemTitle">♡11月14日のご案内状況♡</h3>
               </a>
             </div>
             <div class="item">
-              <a href="news/news_1.html">
+              <a href="{{ route('news_1') }}">
                 <label>NEWS</label>
                 <p class="item_time">2021/11/xx(日) 7:00</p>
                 <h3 class="itemTitle">♡11月14日のご案内状況♡</h3>
               </a>
             </div>
             <div class="item">
-              <a href="news/news_1.html">
+              <a href="{{ route('news_1') }}">
                 <label>NEWS</label>
                 <p class="item_time">2021/11/xx(日) 7:00</p>
                 <h3 class="itemTitle">♡11月14日のご案内状況♡</h3>
               </a>
             </div>
             <div class="item">
-              <a href="news/news_1.html">
+              <a href="{{ route('news_1') }}">
                 <label>NEWS</label>
                 <p class="item_time">2021/11/xx(日) 7:00</p>
                 <h3 class="itemTitle">♡11月14日のご案内状況♡</h3>
               </a>
             </div>
             <div class="item">
-              <a href="news/news_1.html">
+              <a href="{{ route('news_1') }}">
                 <label>NEWS</label>
                 <p class="item_time">2021/11/xx(日) 7:00</p>
                 <h3 class="itemTitle">♡11月14日のご案内状況♡</h3>
@@ -1245,7 +1001,7 @@
           <!-- btn -->
           <div class="showMoreButton item_button">
             <p class="btnCont">
-              <a class="btn" href="news_list.html">
+              <a class="btn" href="{{ route('news_list') }}">
                 <span>READ MORE ＞＞</span>
               </a>
             </p>
@@ -1265,22 +1021,19 @@
         </div>
         <div class="item_rooms">
           <div class="item_room">
-            <img data-src="assets/customer/room_01.jpg" class="lazyload" alt="部屋名01"
-              src="assets/customer/lazy/room_image-5549da4fd57db15f261768d718c8de8c17f1face76f7a087372c333b880c5220.jpg.png" />
+            <img data-src="{{ asset('bazu/assets/customer/room_01.jpg') }}" class="lazyload" alt="部屋名01" src="{{ asset('bazu/assets/customer/lazy/room_image-5549da4fd57db15f261740d718c8de8c17f1face76f7a087372c333b880c5220.jpg.png') }}"/>
             <div class="room_name">
               <p>部屋名01</p>
             </div>
           </div>
           <div class="item_room">
-            <img data-src="assets/customer/room_01.jpg" class="lazyload" alt="部屋名02"
-              src="assets/customer/lazy/room_image-5549da4fd57db15f261768d718c8de8c17f1face76f7a087372c333b880c5220.jpg.png" />
+            <img data-src="{{ asset('bazu/assets/customer/room_01.jpg') }}" class="lazyload" alt="部屋名02" src="{{ asset('bazu/assets/customer/lazy/room_image-5549da4fd57db15f261740d718c8de8c17f1face76f7a087372c333b880c5220.jpg.png') }}" />
             <div class="room_name">
               <p>部屋名02</p>
             </div>
           </div>
           <div class="item_room">
-            <img data-src="assets/customer/room_01.jpg" class="lazyload" alt="部屋名03"
-              src="assets/customer/lazy/room_image-5549da4fd57db15f261768d718c8de8c17f1face76f7a087372c333b880c5220.jpg.png" />
+            <img data-src="{{ asset('bazu/assets/customer/room_01.jpg') }}" class="lazyload" alt="部屋名03" src="{{ asset('bazu/assets/customer/lazy/room_image-5549da4fd57db15f261740d718c8de8c17f1face76f7a087372c333b880c5220.jpg.png') }}"/>
             <div class="room_name">
               <p>部屋名03</p>
             </div>
@@ -1347,14 +1100,14 @@
               </p>
             </div>
             <div class="item_right item_image">
-              <img data-src="assets/customer/concept.jpg" class="lazyload" alt=""
-                src="assets/customer/lazy/concept_image-a56a86d90af1073fb96ce2a7645bb5e9fceb44a61fffebd267160be361bead6a.jpg.png" />
+              <img data-src="{{ asset('bazu/assets/customer/concept.jpg') }}" class="lazyload" alt=""
+                src="{{ asset('bazu/assets/customer/lazy/concept_image-a56a86d90af1073fb96ce2a7645bb5e9fceb44a61fffebd267160be361bead6a.jpg.png') }}" />
             </div>
           </div>
           <div class="item_concept clearfix">
             <div class="item_left item_image">
-              <img data-src="assets/customer/concept.jpg" class="lazyload" alt=""
-                src="assets/customer/lazy/concept_image-a56a86d90af1073fb96ce2a7645bb5e9fceb44a61fffebd267160be361bead6a.jpg.png" />
+              <img data-src="{{ asset('bazu/assets/customer/concept.jpg') }}" class="lazyload" alt=""
+                src="{{ asset('bazu/assets/customer/lazy/concept_image-a56a86d90af1073fb96ce2a7645bb5e9fceb44a61fffebd267160be361bead6a.jpg.png') }}" />
             </div>
             <div class="item_right">
               <h3 class="section_title_sub">
@@ -1390,8 +1143,8 @@
               </p>
             </div>
             <div class="item_right item_image">
-              <img data-src="assets/customer/concept.jpg" class="lazyload" alt="コンセプト - くつろげる癒しの空間"
-                src="assets/customer/lazy/concept_image-a56a86d90af1073fb96ce2a7645bb5e9fceb44a61fffebd267160be361bead6a.jpg.png" />
+              <img data-src="{{ asset('bazu/assets/customer/concept.jpg') }}" class="lazyload" alt="コンセプト - くつろげる癒しの空間"
+                src="{{ asset('bazu/assets/customer/lazy/concept_image-a56a86d90af1073fb96ce2a7645bb5e9fceb44a61fffebd267160be361bead6a.jpg.png') }}" />
             </div>
           </div>
         </div>
@@ -1405,7 +1158,7 @@
           <a target="_blank" href="#">
             <img
               alt='&lt;a href=# target="_blank"&gt;&lt;img src="https://job.eslove.jp/eslove_job_front_theme/banner/banner_200x40.jpg" alt="東京のメンズエステ求人情報ならエステラブワーク"/&gt;&lt;/a&gt;'
-              src="assets/customer/banner_sm.jpg" />
+              src="{{ asset('bazu/assets/customer/banner_sm.jpg') }}" />
           </a>
         </p>
       </div>
@@ -1416,7 +1169,7 @@
           <a target="_blank" href="#">
             <img
               alt='&lt;a href=# target="_blank"&gt;&lt;img src="https://job.eslove.jp/eslove_job_front_theme/banner/banner_200x40.jpg" alt="東京のメンズエステ求人情報ならエステラブワーク"/&gt;&lt;/a&gt;'
-              src="assets/customer/banner_sm.jpg" />
+              src="{{ asset('bazu/assets/customer/banner_sm.jpg') }}" />
           </a>
         </p>
       </div>
@@ -1427,7 +1180,7 @@
           <a target="_blank" href="#">
             <img
               alt='&lt;a href=# target="_blank"&gt;&lt;img src="https://job.eslove.jp/eslove_job_front_theme/banner/banner_200x40.jpg" alt="東京のメンズエステ求人情報ならエステラブワーク"/&gt;&lt;/a&gt;'
-              src="assets/customer/banner_sm.jpg" />
+              src="{{ asset('bazu/assets/customer/banner_sm.jpg') }}" />
           </a>
         </p>
       </div>
@@ -1438,7 +1191,7 @@
           <a target="_blank" href="#">
             <img
               alt='&lt;a href=# target="_blank"&gt;&lt;img src="https://job.eslove.jp/eslove_job_front_theme/banner/banner_200x40.jpg" alt="東京のメンズエステ求人情報ならエステラブワーク"/&gt;&lt;/a&gt;'
-              src="assets/customer/banner_sm.jpg" />
+              src="{{ asset('bazu/assets/customer/banner_sm.jpg') }}" />
           </a>
         </p>
       </div>
@@ -1449,7 +1202,7 @@
           <a target="_blank" href="#">
             <img
               alt='&lt;a href=# target="_blank"&gt;&lt;img src="https://job.eslove.jp/eslove_job_front_theme/banner/banner_200x40.jpg" alt="東京のメンズエステ求人情報ならエステラブワーク"/&gt;&lt;/a&gt;'
-              src="assets/customer/banner_sm.jpg" />
+              src="{{ asset('bazu/assets/customer/banner_sm.jpg') }}" />
           </a>
         </p>
       </div>
@@ -1458,122 +1211,5 @@
   </main>
   <!-- ======== /main ======== -->
   <!-- ======== footer ======== -->
-  <footer class="priority">
-    <div class="scrollUp">
-      <a href="#scrollTopPoint" class="pageLink">
-        <i class="scrollUpIcon">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
-            x="0px" y="0px" width="512px" height="512px" viewBox="0 0 284.929 284.929"
-            style="enable-background: new 0 0 284.929 284.929" xml:space="preserve">
-            <path
-              d="M282.082,195.285L149.028,62.24c-1.901-1.903-4.088-2.856-6.562-2.856s-4.665,0.953-6.567,2.856L2.856,195.285   C0.95,197.191,0,199.378,0,201.853c0,2.474,0.953,4.664,2.856,6.566l14.272,14.271c1.903,1.903,4.093,2.854,6.567,2.854   c2.474,0,4.664-0.951,6.567-2.854l112.204-112.202l112.208,112.209c1.902,1.903,4.093,2.848,6.563,2.848   c2.478,0,4.668-0.951,6.57-2.848l14.274-14.277c1.902-1.902,2.847-4.093,2.847-6.566   C284.929,199.378,283.984,197.188,282.082,195.285z"
-              fill="#FFFFFF" />
-          </svg>
-        </i>
-      </a>
-    </div>
-    <div class="footerCont cont clearfix">
-      <div class="footerTop">
-        <div class="footerNav">
-          <ul>
-            <li class="display-inline-block">
-              <a href="index.html"> HOME </a>
-            </li>
-            <li class="display-inline-block">
-              <a href="system.html"> SYSTEM </a>
-            </li>
-            <li class="display-inline-block">
-              <a href="schedule.html"> SCHEDULE </a>
-            </li>
-            <li class="display-inline-block">
-              <a href="therapist.html"> THERAPIST </a>
-            </li>
-            <li class="display-inline-block">
-              <a href="reservation.html"> RESERVATION </a>
-            </li>
-            <li class="display-inline-block">
-              <a href="access.html"> ACCESS </a>
-            </li>
-            <li class="display-inline-block">
-              <a href="recruit.html"> RECRUIT </a>
-            </li>
-            <li class="display-inline-block">
-              <a href="policy.html"> POLICY </a>
-            </li>
-            <li>
-              <a target="_blank" alt="Twitter" href="https://twitter.com/"> <i class="fab fa-twitter"
-                  aria-hidden="true"></i>TWITTER<br /> </a>
-            </li>
-            <li>
-              <a target="_blank" alt="LINE" href="https://line.me/"> <i class="fab fa-line"
-                  aria-hidden="true"></i>LINE<br /> </a>
-            </li>
-            <li class="display-inline-block">
-              <a href="link.html"> <i class="fas fa-external-link-alt"></i>外部リンク</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footerBottom clearfix">
-        <div class="footerLogo">
-          <a href="index.html" class="logoLink">
-            <img class="logo" alt="ロゴ" src="assets/customer/logo.png" />
-            <span></span>
-          </a>
-        </div>
-        <div class="footerText">
-          <p>サンプルエステサイト は、女性セラピストのクオリティや、 独自のマッサージ法も導入し、全てのお客様に満足頂けるよう細部までこだわり運営しております。</p>
-        </div>
-        <div class="footerInfo displayNoneLess768">
-          <a onclick='gtag("event", "tel", { "event_category": "cv", "event_label": "telclick", "value": 1 });'
-            alt="09000000000" href="tel:09000000000">
-            <p>
-              <span class="icon"><img class="" src="assets/customer/tel_white.png" /></span>
-              09000000000
-              <span class="icon"><img class="" src="assets/customer/clock_white.png" /></span>
-              10:00~05:00
-            </p>
-          </a>
-        </div>
-      </div>
-      <div class="footerCopyright">
-        <p>© サンプルエステ</p>
-      </div>
-      <div class="footerProvided">
-        <a href="#" target="_blank">Provided by エステ ホームページ制作企画</a>
-      </div>
-    </div>
-    <div class="footerFixedBtn displayNoneMore1023">
-      <ul>
-        <li>
-          <a onclick='gtag("event", "tel", { "event_category": "cv", "event_label": "telclick", "value": 1 });'
-            alt="09000000000" href="tel:09000000000">
-            <i class="fas fa-mobile-alt"></i><br />
-            お電話
-          </a>
-        </li>
-        <li>
-          <a alt="webで予約" href="reservation.html">
-            <i class="fas fa-edit"></i><br />
-            WEB
-          </a>
-        </li>
-        <li>
-          <a target="_blank" alt="LINE" href="https://line.me/">
-            <i class="fab fa-line"></i><br />
-            LINE
-          </a>
-        </li>
-        <li>
-          <a href="#scrollTopPoint" class="pageLink">
-            <i class="fas fa-angle-double-up"></i><br />
-            トップへ
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+  @include('frontend.sections.footer')
   <!-- ======== /footer ======== -->
-</body>
-
-</html>

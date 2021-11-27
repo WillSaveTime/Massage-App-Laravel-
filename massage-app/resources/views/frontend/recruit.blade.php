@@ -1,175 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, initial-scale=1, user-scalable=no" />
-    <title>サンプルエステサイト　リンパ</title>
-    <meta name="description" content="ここにサイト説明が入ります" />
-    <meta name="keywords" content="ここに, キーワードが, 入ります" />
-    <link rel="canonical" href="index.html" />
-    <meta property="og:title" content="ここにOGTタイトルが入ります" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.ここにOGTURLが入ります.com/" />
-    <meta property="og:image" content="assets/customer/logo.png" />
-    <meta property="og:site_name" content="OGT用サイト名が入ります" />
-    <meta property="og:description" content="ここにOGTサイト説明が入ります" />
-    <meta property="og:locale" content="ja_JP" />
-    <meta name="csrf-param" content="" />
-    <meta name="csrf-token" content="" />
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" media="all" href="assets/lux_esthe.css" data-turbolinks-track="reload" />
-    <script src="assets/lux_esthe.js" data-turbolinks-track="reload"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <!-- css -->
+@include('frontend.sections.header')
+  <!-- ======== main ======== -->
+    <!-- ======== header ======== -->
+    @include('frontend.sections.pageheader')
+    <!-- ======== /header ======== -->
+    <!-- ======== nav ======== -->
+    @include('frontend.sections.nav')
+    <!-- ======== /nav ======== -->
 
-    <!-- ======== FONT ICON ======== -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-      crossorigin="anonymous"
-    />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109414251-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-109414251-2');
-      gtag('config', 'G-V6KSX2CPEG');
-    </script>
-  </head>
-  <body>
-    <!-- ======== main ======== -->
-    <main class="priority recruitMainView noHome">
-      <!-- ======== header ======== -->
-      <header class="priority clearfix">
-        <div class="header_inner cont clearfix">
-          <div class="header_left">
-            <div class="header_logo">
-              <a class="logo_link" href="index.html">
-                <img class="logo logo_01" src="assets/customer/logo.png" />
-                <img class="logo logo_02" src="assets/customer/logo_secondary.png" />
-                <h1 class="logo_desc" style="color: #ffffff; font-family: 'Noto Serif JP', sans-serif; padding: 5px 0;">サンプルエステサイト</h1>
-              </a>
-            </div>
-          </div>
-          <div class="header_right">
-            <div id="navBtnJs" class="navBar displayNoneMore1023">
-              <span data-open=""></span>
-              <div>
-                <i></i>
-                <i></i>
-                <i></i>
-              </div>
-            </div>
-          </div>
-          <div class="header_center">
-            <div class="navInfo">
-          <a onclick='gtag("event", "tel", { "event_category": "cv", "event_label": "telclick", "value": 1 });' alt="09000000000" href="tel:09000000000" style="z-index: 20;">
-                <p class="timeAndTel">Tel：090-0000-0000</p>
-              </a>
-              <p class="timeAndTel">
-                Open：10:00~05:00
-                <br class="displayNoneLess1023" />
-                <span> (受付時間)09:30~05:00 </span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- ======== /header ======== -->
-      <!-- ======== nav ======== -->
-      <nav class="navPc displayNoneLess1023">
-        <ul class="navItems clearfix" id="navItemsPc">
-          <li class="display-inline-block navItem riseFadeJs">
-            <a class="pageLink" href="#recruitGreeting"> GREETING<br /><small>ご挨拶</small> </a>
-          </li>
-          <li class="display-inline-block navItem riseFadeJs">
-            <a class="pageLink" href="#training"> DEBUT<br /><small>デビューまで</small> </a>
-          </li>
-          <li class="display-inline-block navItem riseFadeJs">
-            <a class="pageLink" href="#salary"> SALARY<br /><small>お給料</small> </a>
-          </li>
-          <li class="display-inline-block navItem riseFadeJs">
-            <a class="pageLink" href="#voices"> VOICES<br /><small>セラピストの声</small> </a>
-          </li>
-          <li class="display-inline-block navItem riseFadeJs">
-            <a class="pageLink" href="#details"> DETAILS<br /><small>募集要項</small> </a>
-          </li>
-          <li class="display-inline-block navItem riseFadeJs">
-            <a class="pageLink" href="#faq"> FAQ<br /><small>ご質問</small> </a>
-          </li>
-          <li class="display-inline-block navItem riseFadeJs">
-            <a class="pageLink" href="#form"> FORM<br /><small>ご応募</small> </a>
-          </li>
-          <li class="display-inline-block navItem riseFadeJs">
-            <a href="index.html"> HOME<br /><small>店舗ページ</small> </a>
-          </li>
-        </ul>
-      </nav>
-
-      <nav id="navJs" class="navSpTb displayNoneMore1023">
-        <ul class="navItems">
-          <li class="display-block navItem riseFadeJs">
-            <a class="pageLink" href="#recruitGreeting"> GREETING<br /><small>ご挨拶</small> </a>
-          </li>
-          <li class="display-block navItem riseFadeJs">
-            <a class="pageLink" href="#training"> DEBUT<br /><small>デビューまで</small> </a>
-          </li>
-          <li class="display-block navItem riseFadeJs">
-            <a class="pageLink" href="#salary"> SALARY<br /><small>お給料</small> </a>
-          </li>
-          <li class="display-block navItem riseFadeJs">
-            <a class="pageLink" href="#voices"> VOICES<br /><small>セラピストの声</small> </a>
-          </li>
-          <li class="display-block navItem riseFadeJs">
-            <a class="pageLink" href="#details"> DETAILS<br /><small>募集要項</small> </a>
-          </li>
-          <li class="display-block navItem riseFadeJs">
-            <a class="pageLink" href="#faq"> FAQ<br /><small>ご質問</small> </a>
-          </li>
-          <li class="display-block navItem riseFadeJs">
-            <a class="pageLink" href="#form"> FORM<br /><small>ご応募</small> </a>
-          </li>
-          <li class="display-block navItem riseFadeJs">
-            <a href="index.html"> HOME<br /><small>店舗ページ</small> </a>
-          </li>
-        </ul>
-
-        <div class="navInfo riseFadeJs">
-          <p>営業情報</p>
-          <a onclick='gtag("event", "tel", { "event_category": "cv", "event_label": "telclick", "value": 1 });' alt="09000000000" href="tel:09000000000" style="z-index: 20;">
-            <p class="timeAndTel">
-              <span class="icon"><img class="" src="assets/customer/clock_gold.png" /></span> 10:00~05:00
-            </p>
-            <p class="timeAndTel">
-              <span class="icon"><img class="" src="assets/customer/tel_gold.png" /></span> 09000000000
-            </p>
-          </a>
-        </div>
-      </nav>
-      <!-- ======== /nav ======== -->
-
-      <!-- ======== mainView ======== -->
-      <section class="mainView" id="scrollTopPoint">
-        <div class="mainViewCont">
-          <div class="mainViewInner">
-            <div class="sectionTitle textCenter pdTop80 m-pdTop50 s-pdTop30">
-              <h2 class="sectionTitleTop">セラピスト<br />大募集中</h2>
-            </div>
-            <div class="sectionDesc textCenter">
-              <p>地域No.1の集客数を誇る当店で<br />しっかり・楽しく<br />稼ぎませんか？？</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ======== /mainView ======== -->
+    <!-- ======== mainView ======== -->
+    @include('frontend.sections.mainview')
+    <!-- ======== /mainView ======== -->
 
       <!-- ======== recruitgreeting_view ======== -->
       <section class="recruitgreeting_view clearfix" id="recruitGreeting">
@@ -219,25 +59,25 @@
           <h2 class="headRecommendation">当店は、こんな方におすすめのお店です♪</h2>
           <div class="itemRecommendation">
             <p class="listRecommendation">
-              <span class="icon"><img src="assets/customer/recruit/heart.png" /></span
+              <span class="icon"><img src="{{ asset('bazu/assets/customer/recruit/heart.png') }}" /></span
               >実際に働いたら違った。という経験がある方<br />
               <br class="displayNoneMore768" />
-              <span class="icon"><img src="assets/customer/recruit/heart.png" /></span
+              <span class="icon"><img src="{{ asset('bazu/assets/customer/recruit/heart.png') }}" /></span
               >優しい心で、お客様と楽しく接客することができる方<br />
               <br class="displayNoneMore768" />
-              <span class="icon"><img src="assets/customer/recruit/heart.png" /></span
+              <span class="icon"><img src="{{ asset('bazu/assets/customer/recruit/heart.png') }}" /></span
               >「人を癒す」仕事に興味がある方（未経験の方もOK）<br />
               <br class="displayNoneMore768" />
-              <span class="icon"><img src="assets/customer/recruit/heart.png" /></span
+              <span class="icon"><img src="{{ asset('bazu/assets/customer/recruit/heart.png') }}" /></span
               >マッサージを学びたい、技術を身に着けたい方<br />
               <br class="displayNoneMore768" />
-              <span class="icon"><img src="assets/customer/recruit/heart.png" /></span
+              <span class="icon"><img src="{{ asset('bazu/assets/customer/recruit/heart.png') }}" /></span
               >マッサージ、リラク、エステなど経験者の方<br />
               <br class="displayNoneMore768" />
-              <span class="icon"><img src="assets/customer/recruit/heart.png" /></span
+              <span class="icon"><img src="{{ asset('bazu/assets/customer/recruit/heart.png') }}" /></span
               >身に着けた知識を活かして高収入を得たい方<br />
               <br class="displayNoneMore768" />
-              <span class="icon"><img src="assets/customer/recruit/heart.png" /></span
+              <span class="icon"><img src="{{ asset('bazu/assets/customer/recruit/heart.png') }}" /></span
               >プロフェッショナルな技術や知識を身に付けたい方<br />
               <br class="displayNoneMore768" />
             </p>
@@ -250,7 +90,7 @@
         <div class="trainingViewCont">
           <div class="catchphraseCont">
             <div class="trainingMov1">
-              <img src="assets/customer/recruit/recruite_training.png" />
+              <img src="{{ asset('bazu/assets/customer/recruit/recruite_training.png') }}" />
             </div>
             <div class="catchphraseTxt">
               <p class="catchphrase">未経験でも安心・安全！</p>
@@ -279,7 +119,7 @@
                   <p class="text">未経験のセラピストも経験のあるセラピストも<span>プロトレーナー</span>より一からオイルマッサージの基礎を学びます。</p>
                 </div>
                 <div class="item_left">
-                  <img src="assets/customer/recruit/training.jpg" />
+                  <img src="{{ asset('bazu/assets/customer/recruit/training.jpg') }}" />
                 </div>
               </div>
 
@@ -290,7 +130,7 @@
                   <p class="text">当店はマッサージだけではなく<span>接客、心配り</span>なども大切にしています。その基本をお伝えします。</p>
                 </div>
                 <div class="item_left">
-                  <img src="assets/customer/recruit/training.jpg" />
+                  <img src="{{ asset('bazu/assets/customer/recruit/training.jpg') }}" />
                 </div>
               </div>
 
@@ -301,7 +141,7 @@
                   <p class="text">自分の課題克服のための<span>反復練習や実践的な全体通し練習</span>などを行います。トレーナーより合格をもらえたらいざデビュー！</p>
                 </div>
                 <div class="item_left">
-                  <img src="assets/customer/recruit/training.jpg" />
+                  <img src="{{ asset('bazu/assets/customer/recruit/training.jpg') }}" />
                 </div>
               </div>
 
@@ -315,12 +155,12 @@
                   </p>
                 </div>
                 <div class="item_left">
-                  <img src="assets/customer/recruit/training.jpg" />
+                  <img src="{{ asset('bazu/assets/customer/recruit/training.jpg') }}" />
                 </div>
               </div>
 
               <div class="trainingMov2">
-                <img src="assets/customer/recruit/recruite_training02.png" />
+                <img src="{{ asset('bazu/assets/customer/recruit/recruite_training02.png') }}" />
               </div>
             </div>
           </div>
@@ -341,7 +181,7 @@
           <div class="items displayNoneLess768">
             <div class="item">
               <div class="item_left item_image">
-                <img src="assets/customer/recruit/therapist_img.png" />
+                <img src="{{ asset('bazu/assets/customer/recruit/therapist_img.png') }}" />
               </div>
               <div class="item_right itemTxtBox">
                 <h3 class="section_title_sub textCenter jp">H子さん(23歳)の場合</h3>
@@ -361,14 +201,14 @@
                 </p>
               </div>
               <div class="item_right item_image">
-                <img src="assets/customer/recruit/therapist_img.png" />
+                <img src="{{ asset('bazu/assets/customer/recruit/therapist_img.png') }}" />
               </div>
             </div>
 
           <div class="items displayNoneLess768">
             <div class="item">
               <div class="item_left item_image">
-                <img src="assets/customer/recruit/therapist_img.png" />
+                <img src="{{ asset('bazu/assets/customer/recruit/therapist_img.png') }}" />
               </div>
               <div class="item_right itemTxtBox">
                 <h3 class="section_title_sub textCenter jp">H子さん(23歳)の場合</h3>
@@ -392,10 +232,10 @@
             <h2>安心安全でしっかり稼げるお店</h2>
             <p>を目指しています!!</p>
             <div class="pointMov1">
-              <img src="assets/customer/recruit/flower_outer_01.png" />
+              <img src="{{ asset('bazu/assets/customer/recruit/flower_outer_01.png') }}" />
             </div>
             <div class="pointMov2">
-              <img src="assets/customer/recruit/flower_outer_02.png" />
+              <img src="{{ asset('bazu/assets/customer/recruit/flower_outer_02.png') }}" />
             </div>
           </div>
           <div class="pointItemCont clearfix">
@@ -412,14 +252,14 @@
                 目指しています。
               </p>
               <div class="pointMov3">
-                <img src="assets/customer/recruit/flower_inner.png" />
+                <img src="{{ asset('bazu/assets/customer/recruit/flower_inner.png') }}" />
               </div>
               <div class="pointMov5 displayNoneMore768">
-                <img src="assets/customer/recruit/flower_inner.png" />
+                <img src="{{ asset('bazu/assets/customer/recruit/flower_inner.png') }}" />
               </div>
             </div>
             <div class="pointMov4">
-              <img src="assets/customer/recruit/girl01.png" />
+              <img src="{{ asset('bazu/assets/customer/recruit/girl01.png') }}" />
             </div>
           </div>
         </div>
@@ -445,19 +285,19 @@
           </div>
           <div class="itemsPrivilege">
             <div class="itemPrivilege">
-              <img src="assets/customer/recruit/privilege.png" />
+              <img src="{{ asset('bazu/assets/customer/recruit/privilege.png') }}" />
             </div>
             <div class="itemPrivilege">
-              <img src="assets/customer/recruit/privilege.png" />
+              <img src="{{ asset('bazu/assets/customer/recruit/privilege.png') }}" />
             </div>
             <div class="itemPrivilege">
-              <img src="assets/customer/recruit/privilege.png" />
+              <img src="{{ asset('bazu/assets/customer/recruit/privilege.png') }}" />
             </div>
           </div>
           <p class="moreTxt">さらに...</p>
           <div class="itemBanner">
             <a href="#form">
-              <img src="assets/customer/recruit/recruit_banner.jpg" />
+              <img src="{{ asset('bazu/assets/customer/recruit/recruit_banner.jpg') }}" />
             </a>
           </div>
         </div>
@@ -475,27 +315,27 @@
           </div>
           <ul class="coreLists">
             <li>
-              <img src="assets/customer/recruit/core1.png" />
+              <img src="{{ asset('bazu/assets/customer/recruit/core1.png') }}" />
               <p>エリアNo.1の給与体系</p>
             </li>
             <li>
-              <img src="assets/customer/recruit/core2.png" />
+              <img src="{{ asset('bazu/assets/customer/recruit/core2.png') }}" />
               <p>体験入店OK</p>
             </li>
             <li>
-              <img src="assets/customer/recruit/core3.png" />
+              <img src="{{ asset('bazu/assets/customer/recruit/core3.png') }}" />
               <p>未経験でも大丈夫</p>
             </li>
             <li>
-              <img src="assets/customer/recruit/core4.png" />
+              <img src="{{ asset('bazu/assets/customer/recruit/core4.png') }}" />
               <p>安心・安全の健全店</p>
             </li>
             <li>
-              <img src="assets/customer/recruit/core5.png" />
+              <img src="{{ asset('bazu/assets/customer/recruit/core5.png') }}" />
               <p>安心の完全時給制も</p>
             </li>
             <li>
-              <img src="assets/customer/recruit/core6.png" />
+              <img src="{{ asset('bazu/assets/customer/recruit/core6.png') }}" />
               <p>完全個室待機</p>
             </li>
           </ul>
@@ -527,7 +367,7 @@
                 </p>
               </div>
               <div class="voiceMov">
-                <img src="assets/customer/recruit/voice.png" />
+                <img src="{{ asset('bazu/assets/customer/recruit/voice.png') }}" />
               </div>
             </div>
             <div class="itemVoice">
@@ -543,7 +383,7 @@
                 </p>
               </div>
               <div class="voiceMov">
-                <img src="assets/customer/recruit/voice.png" />
+                <img src="{{ asset('bazu/assets/customer/recruit/voice.png') }}" />
               </div>
             </div>
             <div class="itemVoice">
@@ -559,7 +399,7 @@
                 </p>
               </div>
               <div class="voiceMov">
-                <img src="assets/customer/recruit/voice.png" />
+                <img src="{{ asset('bazu/assets/customer/recruit/voice.png') }}" />
               </div>
             </div>
             <div class="itemVoice">
@@ -575,7 +415,7 @@
                 </p>
               </div>
               <div class="voiceMov">
-                <img src="assets/customer/recruit/voice.png" />
+                <img src="{{ asset('bazu/assets/customer/recruit/voice.png') }}" />
               </div>
             </div>
           </div>
@@ -726,7 +566,7 @@
 
           <div class="bannerCont">
             <a target="_blank" alt="サンプルエステ　リンパ　LINE" href="https://line.me/">
-              <img src="assets/customer/banner_sm.jpg" />
+              <img src="{{ asset('bazu/assets/customer/banner_sm.jpg') }}" />
               <div class="lineQrCode">
                 <img src="https://s3-ap-northeast-1.amazonaws.com/リンパ-bucket-prod/uploads/lien_info/qr_code_image/22/8cc743b6-1e16-44a0-ba32-a4f61dc4934c.png" />
               </div>
@@ -747,14 +587,14 @@
           </div>
           <div class="items">
             <div class="item">
-              <div class="iconQA"><img src="assets/customer/recruit/faq.png" /></div>
+              <div class="iconQA"><img src="{{ asset('bazu/assets/customer/recruit/faq.png') }}" /></div>
               <div class="itemTxt">
                 <p class="head">お仕事内容をおしえてください。</p>
                 <p class="detail">アロマオイルを使用したトリートメントをおこないます。風俗店ではありませんので性的サービスは一切ありません。</p>
               </div>
             </div>
             <div class="item">
-              <div class="iconQA"><img src="assets/customer/recruit/faq.png" /></div>
+              <div class="iconQA"><img src="{{ asset('bazu/assets/customer/recruit/faq.png') }}" /></div>
               <div class="itemTxt">
                 <p class="head">マッサージ経験のない普通の女の子でも大丈夫でしょうか。</p>
                 <p class="detail">
@@ -764,14 +604,14 @@
               </div>
             </div>
             <div class="item">
-              <div class="iconQA"><img src="assets/customer/recruit/faq.png" /></div>
+              <div class="iconQA"><img src="{{ asset('bazu/assets/customer/recruit/faq.png') }}" /></div>
               <div class="itemTxt">
                 <p class="head">講習の内容はどういったものですか？</p>
                 <p class="detail">女性トレーナーによる実践的な講習を実施しております。 もちろん、<b>男性スタッフによるセクハラ講習などは一切ございません。</b></p>
               </div>
             </div>
             <div class="item">
-              <div class="iconQA"><img src="assets/customer/recruit/faq.png" /></div>
+              <div class="iconQA"><img src="{{ asset('bazu/assets/customer/recruit/faq.png') }}" /></div>
               <div class="itemTxt">
                 <p class="head">女性同士の派閥とかはありませんか？</p>
                 <p class="detail">
@@ -780,21 +620,21 @@
               </div>
             </div>
             <div class="item">
-              <div class="iconQA"><img src="assets/customer/recruit/faq.png" /></div>
+              <div class="iconQA"><img src="{{ asset('bazu/assets/customer/recruit/faq.png') }}" /></div>
               <div class="itemTxt">
                 <p class="head">ノルマや罰金はありますか？</p>
                 <p class="detail">もちろん一切ございません。罰金制度等もございませんので安心してお仕事していただけます。</p>
               </div>
             </div>
             <div class="item">
-              <div class="iconQA"><img src="assets/customer/recruit/faq.png" /></div>
+              <div class="iconQA"><img src="{{ asset('bazu/assets/customer/recruit/faq.png') }}" /></div>
               <div class="itemTxt">
                 <p class="head">お休みは自由に取れますか？</p>
                 <p class="detail">自由にシフトを出していただいておりますので、お仕事したいときにしていただき、お休みしたいときにお休みください。</p>
               </div>
             </div>
             <div class="item">
-              <div class="iconQA"><img src="assets/customer/recruit/faq.png" /></div>
+              <div class="iconQA"><img src="{{ asset('bazu/assets/customer/recruit/faq.png') }}" /></div>
               <div class="itemTxt">
                 <p class="head">研修費用はかかりますか？</p>
                 <p class="detail">
@@ -803,7 +643,7 @@
               </div>
             </div>
             <div class="item">
-              <div class="iconQA"><img src="assets/customer/recruit/faq.png" /></div>
+              <div class="iconQA"><img src="{{ asset('bazu/assets/customer/recruit/faq.png') }}" /></div>
               <div class="itemTxt">
                 <p class="head">マイナンバーが心配なのですが？</p>
                 <p class="detail">当店には顧問税理士が万全のサポートをしていますのでご安心ください。</p>
@@ -816,128 +656,6 @@
     </main>
     <!-- ======== /main ======== -->
     <!-- ======== footer ======== -->
-    <footer class="priority">
-      <div class="scrollUp">
-        <a href="#scrollTopPoint" class="pageLink">
-          <i class="scrollUpIcon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              id="Capa_1"
-              x="0px"
-              y="0px"
-              width="512px"
-              height="512px"
-              viewBox="0 0 284.929 284.929"
-              style="enable-background: new 0 0 284.929 284.929"
-              xml:space="preserve"
-            >
-              <path
-                d="M282.082,195.285L149.028,62.24c-1.901-1.903-4.088-2.856-6.562-2.856s-4.665,0.953-6.567,2.856L2.856,195.285   C0.95,197.191,0,199.378,0,201.853c0,2.474,0.953,4.664,2.856,6.566l14.272,14.271c1.903,1.903,4.093,2.854,6.567,2.854   c2.474,0,4.664-0.951,6.567-2.854l112.204-112.202l112.208,112.209c1.902,1.903,4.093,2.848,6.563,2.848   c2.478,0,4.668-0.951,6.57-2.848l14.274-14.277c1.902-1.902,2.847-4.093,2.847-6.566   C284.929,199.378,283.984,197.188,282.082,195.285z"
-                fill="#FFFFFF"
-              />
-            </svg>
-          </i>
-        </a>
-      </div>
-      <div class="footerCont cont clearfix">
-        <div class="footerTop">
-          <div class="footerNav">
-            <ul>
-              <li class="display-inline-block">
-                <a href="index.html"> HOME </a>
-              </li>
-              <li class="display-inline-block">
-                <a href="system.html"> SYSTEM </a>
-              </li>
-              <li class="display-inline-block">
-                <a href="schedule.html"> SCHEDULE </a>
-              </li>
-              <li class="display-inline-block">
-                <a href="therapist.html"> THERAPIST </a>
-              </li>
-              <li class="display-inline-block">
-                <a href="reservation.html"> RESERVATION </a>
-              </li>
-              <li class="display-inline-block">
-                <a href="access.html"> ACCESS </a>
-              </li>
-              <li class="display-inline-block">
-                <a href="recruit.html"> RECRUIT </a>
-              </li>
-              <li class="display-inline-block">
-                <a href="policy.html"> POLICY </a>
-              </li>
-              <li>
-                <a target="_blank" alt="Twitter" href="https://twitter.com/"> <i class="fab fa-twitter" aria-hidden="true"></i>TWITTER<br /> </a>
-              </li>
-              <li>
-                <a target="_blank" alt="LINE" href="https://line.me/"> <i class="fab fa-line" aria-hidden="true"></i>LINE<br /> </a>
-              </li>
-              <li class="display-inline-block">
-                <a href="link.html"> <i class="fas fa-external-link-alt"></i>外部リンク </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footerBottom clearfix">
-          <div class="footerLogo">
-            <a href="index.html" class="logo_link">
-              <img class="logo" alt="ロゴ" src="assets/customer/logo.png" />
-              <span>サンプルエステサイト</span>
-            </a>
-          </div>
-          <div class="footerText">
-            <p>サンプルエステサイト は、女性セラピストのクオリティや、リンパ独自のマッサージ法も導入し、全てのお客様に満足頂けるよう細部までこだわり運営しております。</p>
-          </div>
-          <div class="footerInfo displayNoneLess768">
-            <a onclick='gtag("event", "tel", { "event_category": "cv", "event_label": "telclick", "value": 1 });' alt="09000000000" href="tel:09000000000">
-              <p>
-                <span class="icon"><img class="" src="assets/customer/tel_white.png" /></span>
-                09000000000
-                <span class="icon"><img class="" src="assets/customer/clock_white.png" /></span>
-                10:00~05:00
-              </p>
-            </a>
-          </div>
-        </div>
-        <div class="footerCopyright">
-          <p>© サンプルエステ</p>
-        </div>
-        <div class="footerProvided">
-          <a href="#" target="_blank">Provided by サンプルエステサイト　制作企画</a>
-        </div>
-      </div>
-      <div class="footerFixedBtn displayNoneMore1023">
-        <ul>
-          <li>
-            <a onclick='gtag("event", "tel", { "event_category": "cv", "event_label": "telclick", "value": 1 });' alt="09000000000" href="tel:09000000000">
-              <i class="fas fa-mobile-alt"></i><br />
-              お電話
-            </a>
-          </li>
-          <li>
-            <a alt="webで予約" href="reservation.html">
-              <i class="fas fa-edit"></i><br />
-              WEB
-            </a>
-          </li>
-          <li>
-            <a target="_blank" alt="LINE" href="https://line.me/">
-              <i class="fab fa-line"></i><br />
-              LINE
-            </a>
-          </li>
-          <li>
-            <a href="#scrollTopPoint" class="pageLink">
-              <i class="fas fa-angle-double-up"></i><br />
-              トップへ
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+    @include('frontend.sections.footer')
     <!-- ======== /footer ======== -->
-  </body>
-</html>
+
